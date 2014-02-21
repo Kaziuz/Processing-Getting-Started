@@ -312,6 +312,146 @@ La referencia de Processing explica cada elemento de código con una descripció
 __9 metodo:__  Suele llamarsele metodo a una porción de codigo que esta dentro de una clase y que tiene alguna funcionalidad.
 
 
+## Capitulo 3: Dibujo.
+
+### Formas básicas.
+
+Lo primero que hay que saber, es que dibujar sobre una pantalla de computador es como trabajar en una hoja cuadriculada. Primero empezamos paso por paso, teniendo un proceso técnico cuidadoso. Empezaremos dibujando formas simples que luego se expandirán a la animación y la interacción. Pero empecemos por el principio.
+Una pantalla de computador es una red de luces con elementos llamados pixeles. Cada pixel tiene una posición en la pantalla definida por coordenadas. El eje de coordenadas x es la distancia horizontal desde el origen y el eje de coordenadas y es la distancia vertical. En Processing, el origen es la esquina superior izquierda de la ventana de representación y coordina los valores hacia abajo y hacia la derecha. La imagen de la izquierda muestra el sistema de coordenadas, y la imagen de la derecha muestra varias posiciones en la rejilla:
+
+![Plano cartesiano](imagen8.jpg)
+
+Como muestra el ejemplo anterior, si queremos dibujar un pixel en la pantalla; lo llevaremos a cabo de la siguiente manera: Si la pantalla es de 100 por 100 pixeles (Grafica anterior izquierda) entonces podemos decir que la coordenada superior izquierda es de (0, 0) ⇔ (x, y). El centro esta en (50, 50) ⇔(x, y). Y la izquierda de abajo es (99, 99) ⇔ (x, y). Pero esto parece algo confuso, ¿ Porque si el tamaño es de 0 a 100 vamos a recorrerlo de 0 a 99 ?, la respuesta es sencilla, en computación, el cero también es un numero, entonces; si tenemos una cantidad de 1 a 10, realmente tenemos de 0 a 9.
+
+La pantalla es creada y las imágenes son dibujadas adentro de esta a través de elementos del código llamados funciones. Las funciones son los ladrillos básicos de un programa de Processing. El comportamiento de una función es definida por sus parámetros, por ejemplo; al menos cada programa de Processing tiene una función de _size()_ para establecer el ancho y el alto de la pantalla de dibujo. (Si el programa no tiene una función de _size()_, Processing establece una determinada de 100 x 100 pixeles).
+
+### Ejemplo 1. Dibujar una ventana.
+
+La función _size()_ tiene dos parámetros: el primero establece el ancho de la ventana y el segundo establece el alto de la ventana. Para dibujar una ventana que sea de 800 pixeles de ancho y 600 pixeles de alto, se escribe:
+
+```
+Size(800, 600);
+```
+
+Corra este línea de código para ver el resultado. Experimente a escribir diferentes números para ver que resulta. Intente con números muy pequeños y números mas grandes que los de su ventana.
+
+### Ejemplo 2. Dibujar un punto.
+
+Para establecer el color de un solo pixel en la ventana, usamos la función _point()_. Esta tiene dos parámetros que definen su posición: la coordenada x seguida de la coordenada y. Para dibujar una pequeña ventana y un punto en el centro de la pantalla, debería escribir _size()_ seguida de la función _point()._
+
+```
+size(200, 200);
+point(100, 100);
+```
+
+![Pixel](imagen9.png)
+
+### Formas básicas.
+
+Processing incluye un grupo de funciones para dibujar formas básicas. Las formas simples como las líneas pueden ser combinadas para crear formas más complejas como una hoja o una cara. Para dibujar una sola línea, necesitamos cuatro parámetros: dos para fijar las coordenadas x y y iniciales y otras dos coordenadas x y Y  para las posiciones finales.
+
+![Algunas formas basicas](imagen10.jpg)
+
+### Ejemplo 2: Dibujar una línea.
+
+Para dibujar una línea entre las coordenadas (20, 50) y (420, 110), intenta:
+
+![Linea](imagen12.jpg)
+
+```
+size(480, 120);
+line(20, 50, 420, 110);
+```
+
+### Ejemplo 3: Dibujando formas básicas.
+
+Siguiendo este patrón, un triángulo necesita seis parámetros y un cuadrilátero necesita 8 (un par por cada punto):
+
+![Formas básicas](imagen13.jpg)
+
+```
+size(480, 120);
+quad(158,55,199,14,392,66,351,107);
+triangle(347,54,392,9,392,66);
+triangle(158,55,290,91,290,112);
+```
+
+### Ejemplo 4: dibujando un rectángulo
+
+Los rectángulos y círculos son definidos con cuatro parámetros: el primero y el segundo son para las coordenadas X y Y del punto de anclaje, el tercero y cuarto para el ancho y alto. Para hacer un rectángulo con las coordenadas (180,60) con un ancho de 220 pixeles y un largo de 40, usa la función _rect()_ así:
+
+![Rectangulo](imagen14.jpg)
+
+```
+size(480, 120);
+rect(180, 60, 220, 40);
+```
+
+### Ejemplo 5: dibujar un circulo.
+
+Las coordenadas x y Y de un rectángulo son las de la esquina superior izquierda, pero en un circulo son las del centro de la forma. En este ejemplo, notamos que la coordenada Y para el primer circulo esta fuera de la ventana. Los objetos pueden ser dibujados parcialmente (o enteramente) fuera de la ventana sin ningún error.
+
+![Circulos](imagen16.jpg)
+
+```
+size (480,120);
+ellipse (278,-100,400,400);
+ellipse (120,100,110,110);
+ellipse (412,60,18,18);
+```
+
+### Ejemplo 6: dibujar parte de un circulo (arcos).
+
+La función arc() dibuja parte de un circulo.
+
+![arcos](imagen17.jpg)
+
+```
+size (480,120);
+arc (90,60,80,80,0, HALF_PI);
+arc (190,60,80,80,0, PI+HALF_PI);
+arc (290,60,80,80, PI, TWO_PI+HALF_PI);
+arc (390,60,80,80, QUARTER_PI, PI+QUARTER_PI);
+```
+
+En esta función, el primer y segundo parámetro establecen la ubicación, el tercero y cuarto establecen el ancho y el largo. El quinto parámetro establece el ángulo para empezar el arco, y finalmente, el sexto fija donde para el ángulo. Los ángulos están establecidos en [10]radianes, en lugar de grados. Los radianes son ángulos de medición basados en el valor de pi (3.14159). En el siguiente grafico se muestra como ambos se relacionan. Tal como se presenta en este ejemplo, cuatro valores de radian son reemplazados por nombres especiales, para estos fue agregada una parte de Processing. Los valores PI, QUARTER_PI, HALF_PI, y TWO_PI pueden ser usados para reemplazar el valor de 180, 45, 90, 360, radianes.
+
+![radianes](imagen18.png)
+
+### EJERCICIOS !!!
+
+Intenta escribir un programa que dibuje 4 líneas y que toque cada esquina de tu pantalla. Intenta dibujar líneas verticales, horizontales y diagonales. Mira un ejemplo aquí:
+
+![lineas](imagen11.png)
+
+Solucion.
+
+```
+size(500, 500);
+line(0, 0, 500, 500);
+line(500, 0, 0, 500);
+line(0, 250, 500, 250);
+line(250, 0, 250, 500);
+```
+__10 radianes:__ Representa el ángulo central en una circunferencia y abarca un arco cuya longitud es igual a la del radio. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
