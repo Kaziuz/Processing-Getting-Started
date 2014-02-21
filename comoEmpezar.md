@@ -6,9 +6,9 @@
 
 # PROCESSING – ¿ CÓMO EMPEZAR ¡ ?
 
-Índice
+__Índice__
 
-Capitulo 1: Hola.
+## Capitulo 1: Hola.
 
     Breve introducción a los pioneros de los gráficos por computador.
 
@@ -16,7 +16,7 @@ Capitulo 1: Hola.
 
     Que es Processing.
 
-Capitulo 2: Empezando con el código.
+## Capitulo 2: Empezando con el código.
 
     El ambiente de desarrollo Processing o IDE
 
@@ -26,7 +26,7 @@ Capitulo 2: Empezando con el código.
 
     Ejemplos y referencia.
 
-Capitulo 3: Dibujo.
+## Capitulo 3: Dibujo.
 
     Formas básicas.
 
@@ -40,7 +40,7 @@ Capitulo 3: Dibujo.
 
     Comentarios.
 
-Capitulo 4: Variables.
+## Capitulo 4: Variables.
 
     Haciendo variables.
 
@@ -50,7 +50,7 @@ Capitulo 4: Variables.
 
     Repetición
 
-Capitulo 5: Respuesta
+## Capitulo 5: Respuesta
 
     Seguir
 
@@ -62,7 +62,7 @@ Capitulo 5: Respuesta
 
     Tipo
 
-Capitulo 6: Trabajando con archivos Digitales
+## Capitulo 6: Trabajando con archivos Digitales
 
     Que es un archivo Digital.
 
@@ -74,7 +74,7 @@ Capitulo 6: Trabajando con archivos Digitales
 
     Formas.
 
-Capitulo 7: Animación.
+## Capitulo 7: Animación.
 
     Velocidad y dirección
 
@@ -88,7 +88,7 @@ Capitulo 7: Animación.
 
     Trasladar, rotar y escalar.
 
-Capitulo 8: Funciones.
+## Capitulo 8: Funciones.
 
     Funciones básicas.
 
@@ -96,11 +96,11 @@ Capitulo 8: Funciones.
 
     Valores de retorno.
 
-Capitulo 9: Objetos.
+## Capitulo 9: Objetos.
 
     Clases y objetos.
 
-Capitulo 10: Vectores.
+## Capitulo 10: Vectores.
 
     Haciendo un vector.
 
@@ -108,7 +108,7 @@ Capitulo 10: Vectores.
 
     Vectores y Objetos.
 
-Extensión.
+## Extensión.
 
     3D
 
@@ -118,7 +118,7 @@ Extensión.
 
     Comunidad.
 
-Apéndices.
+## Apéndices.
 
     Tips para programar.
 
@@ -309,7 +309,7 @@ Si ves una parte del programa con la cual no estás familiarizado y es de color 
 
 La referencia de Processing explica cada elemento de código con una descripción y algunos ejemplos. La referencia usualmente son programas muy cortos (usualmente cuatro o cinco líneas) y son más fáciles de entender que los códigos largos en la carpeta de ejemplos. Recomendamos abrir la referencia cuando estés leyendo este libro y cuando estés programando. 
 
-__ 9 metodo:__  Suele llamarsele metodo a una porción de codigo que esta dentro de una clase y que tiene alguna funcionalidad.
+__9 metodo:__  Suele llamarsele metodo a una porción de codigo que esta dentro de una clase y que tiene alguna funcionalidad.
 
 
 
