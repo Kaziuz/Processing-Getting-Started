@@ -173,6 +173,49 @@ _5 Diseño de interacción:_ Es un campo de desarrollo interdisciplinario, donde
 _6 Código fuente:_ En el desarrollo de software existe una cadena de producción. Una de las primeras es el código fuente y el código objeto. El código objeto es la aplicación como tal, Word, Excel o Paint son programas objeto, el código fuente son las líneas de código que hay detrás de la aplicación.
 
 
+## Capitulo 2: Empezando con el codigo.
+
+###  El ambiente de desarrollo Processing o IDE.
+
+Para sacar el máximo potencial de este tutorial, necesitas mas que solo leer las palabras que están aquí escritas. Necesitas practicar, equivocarte y experimentar. No puedes aprender a programar solo leyendo, necesitas también hacerlo. Entonces para empezar, descargaremos Processing y realizaremos nuestro primer dibujo.
+
+Empieza visitando [Processing](http://processing.org/download) y selecciona la versión que tengas en tu sistema operativo. La instalación en cada sistema operativo es muy sencilla:
+
+1.En Linux, tendrás un archivo .tar.gz, después de descargarlo en tu [7]directorio home. Por favor abre una ventana de terminal, y escribe:
+
+```
+tar xvfz processing-xxxx.tgz
+````
+
+![Imagen](imagen1.png)
+
+El comando anterior, sirve para descomprimir el archivo que acabaste de descargar.
+Luego, para acceder a esa carpeta, escribiremos lo siguiente en la terminal:
+
+```
+cd processing-xxxx
+````
+y presionamos la tecla enter.
+
+![Imagen](imagen2.png)
+
+Si quieres ver el contenido de la carpeta, escribe el comando _ls_, que significa listar todos los elementos que tenemos en la carpeta.
+Finalmente para hacer correr Processing, escribimos
+
+```
+./processing
+```
+
+![imagen](imagen3.png)
+
+con algo de suerte y un poco de paciencia, podrás ver el IDE de Processing en tu pantalla. Todos los setups son diferentes, si posees algún problema y el programa no empieza, podrás empezar de otra manera, dirigirte a los foros, donde haya podrán resolverte el problema. [foro](http://wiki.processing.org/index.php/Troubleshooting)
+
+2.En Windows, tendrás un archivo .zip. Haz doble click, y arrastra la carpeta dentro de una ubicación en tu disco duro. Podría ser Archivos de programa o simplemente tu escritorio, pero lo importante es que la carpeta Processing sea colocada fuera de ese archivo .zip. Luego das doble click a processing.exe para empezar.
+
+3.En Mac OSX, la versión esta en un archivo de imagen de disket (.dmg). Arrastra el icono de Processing a la carpeta Applications. Si algunas veces usas ese computador y no es posible modificar la carpeta Applications, solo arrastra la aplicación al escritorio. Entonces haga doble click en el icono de Processing para empezar. 
+
+
+_7 Directorio:_ En la terminal, directorio suele nombrarseles a las carpetas de nuestro computador.
 
 
 
