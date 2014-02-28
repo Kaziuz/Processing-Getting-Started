@@ -443,6 +443,77 @@ Cuando un programa de computadora esta corriendo, el computador empezará por la
 
 ![orden](imagen19.jpg)
 
+```
+size (480,120);
+ellipse (140,0,190,190);
+// El rectángulo se dibuja encima del circulo
+// Porque viene después en el código
+rect (160,30,260,20);
+```
+
+Se puede pensar como si estuviéramos dibujando un circulo y un rectángulo. Si primero dibujamos el circulo y luego el rectángulo encima del circulo. Una zona del circulo no será expuesta debido a que el rectángulo opaca esa zona.
+
+## Propiedades de las formas.
+
+En Processing, las formas básicas tienen una funciones que determinan de que forma ellas se trazaran el la pantalla. Veremos las mas básicas pero existen muchas otras. 
+La función _smooth()_ alisa los bordes de las líneas dibujadas en la pantalla, mezclando los bordes con el valor del pixel más cercano. Si el alisamiento ya esta fijado, por el contrario, la función _noSmooth()_ desmontara la funcionalidad de alisado. 
+
+![Alisado Vs No alisado](imagen20.jpg)
+
+### Ejemplo 8: _smooth()_
+
+```
+size (480,120);
+smooth(); //  Fijamos el alisado
+ellipse(140, 60, 90, 90);
+noSmooth();// Apagamos el alisado
+ellipse(240, 60, 90, 90);
+```
+
+__NOTA:__ Algunas de las implementaciones de Processing (como la versión para JavaScript) siempre serán formas lisas; otras podrían no admitir el alisado del todo. En algunas situaciones, no es posible activar y desactivar el alisado entre el mismo dibujo a través de _draw()_. Ver la referencia _smooth()_ para más detalles. 
+
+### Ejemplo 9: Establecer el grosor de las formas.
+
+El grosor del los trazos, normalmente esta establecido a un solo pixel, pero esto puede ser modificado con la función _strokeweight()_. Este solo parámetro puede modificar el grosor del contorno de las formas.
+
+![strokeWeight()](imagen21.jpg)
+
+```
+size (480,120);
+smooth ();
+ellipse (75,60,90,90);
+strokeWeight (8); // Grosor del trazo de 8 pixeles 
+ellipse (175,60,90,90);
+ellipse (279,60,90,90);
+strokeWeight(20); // Grosor del trazo de 20 pixeles
+ellipse (389,60,90,90);
+```
+
+### Ejemplo 10: Estableciendo los atributos del trazo.
+
+La función _strokeJoin()_ cambia la forma en la que las líneas son unidas (como se muestra en las dos primeras formas), y la función _strokeCap()_ cambia como las líneas son dibujadas desde el principio hasta el final.
+
+![unión y terminado de las formas](imagen32.jpg)
+
+```
+size(480,120);
+smooth ();
+strokeWeight(12);
+strokeJoin(ROUND);  
+rect(40,25,70,70);
+strokeJoin (BEVEL); // bisel de la esquina del trazo 
+rect (140,25,70,70);
+strokeCap (SQUARE); // los finales de línea son cuadrados 
+line(270,25,340,95);
+strokeCap (ROUND); // los finales de línea son redondos 
+line(350,25,420,95);
+```
+
+
+
+
+
+
 
 
 
