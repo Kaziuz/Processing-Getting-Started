@@ -509,6 +509,238 @@ strokeCap (ROUND); // los finales de línea son redondos
 line(350,25,420,95);
 ```
 
+__NOTA:__ La colocación de formas como _rect()_ y _ellipse()_ son controladas con las funciones _rectMode()_ y _ellipseMode()_. Compruebe la referencia __(Help -> Reference)__ para ver los ejemplos de cómo ubicar rectángulos desde su centro (mejor que desde la esquina superior izquierda), o para dibujar circulos desde su esquina superior izquierda como los rectángulos.
+
+### Color.
+
+Hasta ahora todas las forma se han llenado de blanco con líneas negras, y el fondo de la pantalla de dibujo ha tenido una luz gris. Para cambiarlos, usa las funciones _background()_, _fill()_ y _stroke()_. Los valores de estos parámetros están en el rango de 0 a 255, cuando 255 es blanco, 128 es gris medio, y 0 es negro. Esto se ilustra mejor en el siguiente grafico
+
+![Escala de grises](imagen23.jpg)
+
+Una muestra de diferentes valores de gris en un fondo negro. 
+
+![Circulos pintados usando la escala de grises](imagen22.jpg)
+
+```
+size (480, 120);
+smooth ();
+background (0);               // Negro
+fill (204);                   // Gris claro
+ellipse (132, 82, 200, 200); 
+fill (153) ;                 //  Gris medio oscuro
+ellipse (228, -16, 200,200 );
+fill(102);                    // Gris oscuro
+ellipse (268, 118, 200, 200); 
+```
+
+### Controlando el relleno y el trazo.
+
+Puedes inhabilitar el trazado así que habrá trazo sin _nostroke()_ y puedes inhabilitar el relleno de una forma con _noFill()_.
+
+![Escala de grises](imagen24.jpg)
+
+```
+size (480, 120);
+smooth ();
+fill (153);
+ellipse (132, 82, 200, 200);
+noFill();
+ellipse (228, -16, 200, 200);
+noStroke ();
+ellipse (268, 118, 200, 200); //  no se dibuja
+```
+
+Sea cuidadoso de no inhabilitar el relleno y el trazo al mismo tiempo, como lo hemos hecho en el ejemplo anterior. Porque nada quedará dibujado en la pantalla.
+
+### Dibujar con color
+
+Para ir más allá de los valores de la escala de grises, usaremos 3 parámetros para especificar las componentes rojo, verde y azul de un color. 
+
+![RGB](imagen25.jpg)
+
+```
+size (480, 120);
+noStroke ();
+smooth ();
+blackground (0, 26, 51);
+fill (255, 0, 0); //  rojo
+ellipse (132, 82, 200, 200);
+fill (0, 255, 0); // verde
+ellipse (228, -16, 200, 200);
+fill (0, 0 , 255); // Azul
+ellipse (268, 118, 200, 200);
+```
+
+Por defecto, podemos trabajar color en escala de grises o color RGB, el cual viene de la definición del color de las pantallas de los computadores. Los tres valores standard son rojo, verde y azul; y su rango que va desde 0 a 255. La forma en que los valores del gris lo hacen usando el color RGB no es muy intuitiva, así que para escoger los colores, usa Tools -> color selector (herramientas-> seleccionar el color), el cual te muestra una paleta de colores similar a la que se encuentra en cualquier software. Selecciona un color, y luego usa los valores R, G y B como parámetros para las funciones _background()_, _fill()_ o _stroke()_.
+
+![Paleta de color](imagen26.jpg)
+
+### Transparencia
+
+Agregando un cuarto parámetro adicional a _fill()_ o _stroke()_, puedes controlar la transparencia. Este cuarto parámetro es conocido como el valor alpha, y también se usa dentro del rango de 0 a 255 para establecer la cantidad de transparencia. El valor 0 define el color como transparente total (no se mostrará), el valor 255 es totalmente opaco, y los valores entre estos extremos causan que los colores se mezclen en la pantalla.
+
+![Pintando con la paleta RGB y usando alpha](imagen27.jpg)
+
+```
+size (480, 120);
+noStroke(); 
+smooth (); 
+background (204,226,225); 
+fill ( 255, 0, 0, 160); 
+ellipse (132, 82, 200, 200);
+fill (0, 255, 0, 160); 
+ellipse (228, -16, 200, 200);
+fill (0, 0, 255, 160); 
+ellipse (268, 118, 200, 200);
+```
+ 
+### Formas personalizadas.
+
+No estás limitado a usar las figuras geométricas básicas, también puedes definir nuevas formas conectando una serie de puntos.
+
+### Ejemplo 11: Dibujar una flecha.
+
+La función _begindShape()_ señala el comienzo de una nueva forma. La función _vertex()_ es usada para definir cada par de coordenadas X y Y para la forma. Finalmente, _endShape()_ es utilizada para señalar que la forma a sido terminada.
+
+![Pintar una flecha](imagen28.jpg)
+
+```
+size (480,120);
+beginShape ();
+vertex (180, 82);
+vertex (207, 36);
+vertex (214, 63);
+vertex (407, 11);
+vertex (412, 30);
+vertex (219, 82);
+vertex (226, 109);
+endShape();
+```
+
+### Ejemplo 12: Cerrando las formas personalizadas.
+
+Cuando se ejecuta el código anterior, puedes ver que el primer y el último punto no están conectados. Para hacer esto, agrega la palabra CLOSE (cerrar) como un parámetro en _endShape()_ así:
+
+![Pintar una flecha](imagen29.jpg)
+
+```
+size (480, 120);
+beginShape();
+vertex (180, 82);
+vertex (207,36);
+vertex (214, 63);
+vertex (407, 11);
+vertex (412, 30);
+vertex (219, 82);
+vertex (226, 109);
+endShape (CLOSE);
+```
+
+### Comentarios.
+
+Los ejemplos de este capítulo usan doble slash // al final de una línea para agregar comentarios en el código. Los comentarios hacen parte del programa y son ignorados cuando el programa está corriendo. Son útiles para hacer notas explicando que hay en el código. Si otro está leyendo tu código, los comentarios son especialmente importantes para ayudar a entender tu proceso de pensamiento.
+
+Los comentarios son especialmente importantes para diferentes opciones, como cuando estamos intentando escoger el color correcto. Así que, por ejemplo, podría estar intentando encontrar el rojo correcto para un circulo:
+```
+size (200, 200);
+fill (165, 57, 57);
+ellipse (100, 100, 80, 80);
+```
+
+Ahora supongo que quiero intentar con otro rojo diferente, pero no quiero perder el viejo. Puedo copiar y pegar la línea, hacer un cambio, y luego “comentar” el viejo:
+
+```
+size (200, 200);
+//fill (165, 57, 57);
+fill (144, 39, 39);
+ellipse (100, 100, 80, 80);
+```
+
+Colocando // al comienzo de la línea se desactiva temporalmente. O puedo remover el // y colocarlo en frente de la otra línea si quiero intentarlo de nuevo:
+
+```
+size (200, 200);
+fill (165, 57, 57);
+//fill (144, 39, 39);
+ellipse (100, 100, 80, 80);
+```
+### Proyecto 1.
+
+Finalizado un capitulo, realizaremos un proyecto. Esta vez realizaremos un pequeño dibujo en Processing a partir de un boceto, con este boceto; iremos trabajando cada final del proyecto, añadiéndole funcionalidades y aplicando todo lo aprendido finalizando cada capitulo.
+
+Para empezar una idea visual, es ideal primero dibujar, crear un pequeño boceto de que es lo que se quiere plasmar en la pantalla.
+
+Yo escogí un satélite, porque me parecen una tecnología muy interesante y visualmente atractiva.
+
+![boceto de un satélite a mano](imagen29.jpg)
+
+Aproximadamente, la forma en Processing visualmente queda así:
+
+![boceto de un satélite en processing](proyecto1.jpg)
+
+```
+//  Proyecto 1
+
+size(500, 500);
+smooth();
+
+// color del fondo
+background(255);
+
+//  Centro del satelite
+ellipseMode(CENTER);
+fill(172, 178, 177);
+noStroke();
+ellipse(250, 250, 100, 100);
+
+strokeWeight(3);
+stroke(0);
+line(220, 275, 275, 220);
+line(230, 285, 285, 230);
+
+//  antena
+rectMode(CORNER);
+noStroke();
+rect(243, 150, 15, 60);
+rect(243, 290, 15, 60);
+
+ellipseMode(CENTER);
+noStroke();
+ellipse(250.5, 363, 30, 30);
+ellipse(250.5, 143, 30, 30);
+
+//  Laterales
+rectMode(CORNER);
+rect(185, 249, 20, 10);
+rect(295, 249, 20, 10);
+
+//  alas
+quad(  50, 220, 185, 190, 185, 310, 50, 280);
+quad( 315, 190, 450, 220, 450, 280, 315, 310);
+stroke(0);
+strokeWeight(3);
+line(55, 225, 175, 200);
+line(55, 275, 175, 300);
+line(320, 300, 445, 275);
+line(320, 200, 445, 225);
+```
+
+__NOTA:__ Todos los codigos escritos en este tutorial, estan en la carpeta de este repo llamada Getting Started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
