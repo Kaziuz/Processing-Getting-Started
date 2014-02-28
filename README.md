@@ -437,6 +437,15 @@ __10 radianes:__ Representa el ángulo central en una circunferencia y abarca un
 
 ## Orden de los dibujos.
 
+Cuando un programa de computadora esta corriendo, el computador empezará por la primera línea de código escrita y terminara en la ultima escrita, después parará. Tener esto en mente es importante, porque así tendremos en cuenta cual será el ultimo dibujo que veremos en pantalla. 
+
+### Ejemplo 7: Orden de los dibujos.
+
+![orden](imagen19.jpg)
+
+
+
+
 
 
 
