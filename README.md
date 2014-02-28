@@ -672,7 +672,7 @@ Para empezar una idea visual, es ideal primero dibujar, crear un pequeño boceto
 
 Yo escogí un satélite, porque me parecen una tecnología muy interesante y visualmente atractiva.
 
-![boceto de un satélite a mano](imagen29.jpg)
+![boceto de un satélite a mano](imagen30.jpg)
 
 Aproximadamente, la forma en Processing visualmente queda así:
 
