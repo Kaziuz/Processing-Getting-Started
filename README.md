@@ -833,13 +833,13 @@ x = x - 250;
 rect (x, y + h*2, 300, h); // Abajo
 ```
 
-En código, los símbolos como +, -, y * son colocados entre dos valores, crean 9 y 1024 - 512 son expresiones. Los operadores para las operaciones matemáticas básicas son:
+En código, los símbolos como ( + ), ( - ), y  ( * ) son colocados entre dos valores, los valores como 9 y 1024 - 512 son expresiones. Los operadores para las operaciones matemáticas básicas son:
 
-+ Adición
-- Sustracción
-* Multiplicación
-/ División
-= Asignación
+1. + Adición
+2. - Sustracción
+3. * Multiplicación
+4. / División
+5. = Asignación
 
 Processing tiene reglas establecidas para definir cuáles operadores tiene prioridad sobre los demás, es decir cuales cálculos se hacen primero, segundo, tercero, y así sucesivamente. Estas reglas se definen en el orden en el cuál el código está corriendo. Un poco de conocimiento acerca del largo camino para la comprensión de cómo funciona una línea corta de código como este:
 
@@ -883,7 +883,208 @@ A medida que escribes más programas, notarás que los patrones se asemejan cuan
 
 ### Ejemplo 5: Hacer lo mismo una y otra vez.
 
-Este ejemplo tiene el tipo de patrón que puede ser simplificado para for loop:
+Este ejemplo tiene el tipo de patrón que puede ser simplificado para _for loop_:
+
+![Repetición](imagen37.jpg)
+
+```
+size (480, 120);
+smooth ();
+strokeWeight (8);
+line (20, 40, 80, 80);
+line (80, 40, 140, 80);
+line (140, 40, 200, 80);
+line (200, 40, 260, 80);
+line (260, 40, 320, 80);
+line (320, 40, 380, 80);
+line (380, 40, 440, 80);
+```
+
+### Ejemplo 6: Usa un for loop.
+
+La misma cosa puede ser hecha por un for, y menos líneas de código:
+
+```
+size (480, 120);
+smooth ();
+strokeWeight (8); 
+for (int i = 20; i < 400; i += 60)
+ {
+   line (i, 40, i + 60, 80); 
+ }
+```
+
+El _for loop_ es diferente, en varias formas del código que hemos escrito hasta ahora. Notarás los paréntesis y los corchetes. El código entre los paréntesis es llamado bloque. Este es el código que será repetido en cada iteración del for loop.
+Dentro de los paréntesis hay tres declaraciones, separadas por punto y coma, que trabajan juntos para controlar cuántas veces corre el código dentro del bloque. De izquierda a derecha, estas declaraciones se refieren a la __inicialización (init)__, __el condicional (test)__, y __el incremento (update)__:
+
+```
+for (init; test; update) 
+{
+statements
+}
+```
+
+Típicamente el __init__ declara una nueva variable para usar dentro de for loop y asignar un valor. El nombre de la variable __i__ es usado frecuentemente, pero no tiene nada de especial. __El condicional__ evalúa el valor de esta variable, y __el incremento__ cambia el valor de la variable. La siguiente imagen muestra el orden en el cuál estos corren y como controlan la declaración del código dentro del bloque.
+
+![Diagrama de flujo de un foor loop](imagen38.jpg)
+
+La declaración del __condicional__ requiere más explicación. Siempre es una __expresión relacional__ que compara dos valores con un __operador relacional__. En este ejemplo, la expresión es “i < 400” y el operador es el símbolo < (menor que). Los operadores relacionales más comunes son:
+
+```
+> Mayor que
+< Menor que
+>= mayor o igual que 
+<= Menor o igual que
+== Igual que 
+!= Diferente que 
+```
+
+La expresión relacional siempre evalúa a __verdadero o falso__. Por ejemplo, la expresión 5 > 3 es verdadera. Podemos preguntar, “es cinco mayor que 3”.La respuesta es “sí”. Entonces decimos que la expresión es verdadera.
+
+Para la expresión 5 < 3, preguntamos, “es cinco menor que tres?” Porque la respuesta es “no”, entonces decimos que la expresión es falsa. Cuando la evaluación es verdadera, el código dentro del bloque está corriendo, y cuando es falsa, el código dentro del bloque no está corriendo y el for loop termina.
+
+### EJERCICIO.
+
+Trata de dibujar la siguiente figura usando un for loop.
+
+![Circulos con for loop](imagen39.jpg)
+
+__Solución__
+
+```
+size (500, 500);
+smooth ();
+background(0);
+for (int i = 25; i < width; i += 50)
+{
+  fill( i / 2 , i + 1 , i  );
+  ellipse (i, i, 70, 70);
+}
+```
+
+### Ejemplo 7: Mas de foor loop. 
+
+![Un abanico de líneas.](imagen40.jpg)
+
+```
+size (480, 120);
+smooth ();
+strokeWeight (2);
+for (int i =20; i <400; i +=20)
+{
+  line (i, 0, i + i/2, 80);
+}
+```
+
+### Ejemplo 8: Incrustar un for loop a otro.
+
+Cuando un for loop es incrustado dentro de otro, el número de repeticiones es multiplicado. Primero, miremos un corto ejemplo, y luego lo descomponemos.
+
+![For dentro de For](imagen41.jpg)
+
+```
+size (480, 120);
+background (0);
+smooth ();
+noStroke ();
+for (int y = 0; y <= height; y += 40)
+{
+  for (int x = 0; x <= width; x += 40)
+  {
+    fill (255, 140);
+    ellipse (x, y, 40, 40);
+  }
+}
+```
+
+### Ejemplo 9: Filas y columnas.
+
+En este ejemplo, el for loop es adyacente, en lugar de uno incrustado dentro de otro. El resultado muestra que un for loop está dibujando una columna de 4 círculos y el otro está dibujando una fila de 13 círculos:
+
+![Filas y columnas](imagen42.jpg)
+
+```
+size (480, 120);
+background (0);
+smooth ();
+noStroke ();
+for (int y = 0; y < height+45; y += 40)
+{ 
+  fill (255, 140);
+  ellipse (0, y, 40, 40);
+}
+for (int x = 0; x < width+45; x += 40) 
+{
+  fill (255, 140);
+  ellipse (x, 0, 40, 40);
+}
+```
+
+Cuando uno de estos for loops es colocado dentro de otro, las cuatro repeticiones del primer loop son agravadas con las trece del segundo en orden para correr dentro del bloque incrustado 52 veces (4 x 13=52).
+El ejemplo 8 es una buena base para explorar varios tipos de patrones de repetición visual. 
+Los siguientes ejemplos muestran un par de formas que pueden ser extendidas, pero este es sólo una pequeña muestra de lo que es posible. En el ejemplo 10, el código dibuja una línea desde cada punto en la red del centro a la pantalla. En el ejemplo 11, se reducen los puntos suspensivos con cada nueva fila y son removidos hacia la derecha agregando la coordenada y a la coordenada x.
+
+### Ejemplo 10: Líneas y círculos.
+
+![Filas y columnas](imagen43.jpg)
+
+```
+size (480, 120);
+background (0);
+smooth ();
+fill (255);
+stroke (102);
+for (int y = 20; y <= height-20; y += 10)
+{
+  for (int x = 20; x <= width-20; x += 20) 
+  {
+
+    ellipse (x, y, 4, 4);
+    //  Dibujamos una linea en el centro de la pantalla
+
+    line(x, y, 240, 60);
+  }
+}
+```
+
+### Ejemplo 11: Círculos.
+
+![Circulos](imagen44.jpg)
+
+```
+size (480, 120);
+background (0);
+smooth (); 
+for (int y = 32; y <= height; y += 8)
+ {
+ for (int x = 12; x <= width; x += 15)
+  {
+   ellipse (x + y, y, 16 - y/10.0, 16 - y/10.0);
+  }
+ }
+ ```
+
+### Proyecto 2: Variables.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
