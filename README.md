@@ -727,6 +727,170 @@ line(320, 200, 445, 225);
 
 __NOTA:__ Todos los codigos escritos en este tutorial, estan en la carpeta de este repo llamada Getting Started.
 
+## Capitulo 4: Variables.
+
+### Haciendo variables.
+
+Cuando se esta programando, necesariamente se necesitan valores que cambian todo el tiempo y generalmente esos valores suelen ser variables.
+Una variable esta formada por dos partes; un espacio en memoria y un nombre simbólico asociado a dicho espacio.
+
+Cuando la variable esta declarada y asignada, el programador puede hacer uso de ella después en el programa las veces que quiera.
+
+La razón principal por la que usamos las variables es para evitar la repetición de líneas en el código. Si estás escribiendo el mismo número más de una vez, considera marcarlo en una variable para hacer tu código más general y fácil de actualizar.
+
+### Ejemplo 1: reutilizar el mismo valor.
+
+Por ejemplo, cuando haces la coordenada Y, y el diámetro para los dos círculos en este ejemplo en variables, los mismos valores son usados para cada circulo:
+
+![Intro a las variables](imagen33.jpg)
+
+```
+size (480, 120);
+smooth ();
+int y = 60;
+int d = 80;
+ellipse (75, y, d, d);  // izquierdo
+ellipse (175, y, d, d); // mitad
+ellipse (275, y, d, d); // derecha
+```
+### Ejemplo 2: cambiar los valores de las variables.
+
+Cambiando simplemente las variables y y d se alteran los 3 círculos:
+
+![Cambio de valores a las variables](imagen34.jpg)
+
+```
+size (480, 120);
+smooth ();
+int y = 100;
+int d = 130;
+ellipse (75, y, d, d);  // izquierdo
+ellipse (175, y, d, d); // mitad
+ellipse (275, y, d, d); // derecha
+```
+
+Sin las variables, necesitarías cambiar la coordenada _Y_ usada en el código tres veces y el diámetro seis veces. Las variables te permiten separar las líneas del código que cambian desde las líneas que no lo hacen, lo cual hace el programa más fácil de modificar. Por ejemplo, si colocas variables que controlan los colores y el tamaño de las formas en un lugar, luego puedes rápidamente explorar diferentes opciones visuales concentrándose en unas cuantas líneas de código.
+Cuando haces tus propias variables, determina el _nombre_, el _tipo de dato_ , y _el valor_. Tú decides cómo llamar a la variable. Escoge un nombre que te informe acerca de lo que guarda la variable, pero que sea consistente y no demasiado detallado. Por ejemplo, el nombre de la variable “radio” será mas claro que “r” cuando mires el código después.
+EL rango de valores que puede ser almacenado entre una variable es definido por su tipo de dato. Por ejemplo, el típico numero entero de dato que puede guardar números sin decimales (números enteros) en código, es abreviado a _int_ . Hay tipos de variables para guardar cada tipo de dato: enteros (__int__), decimales (__float__), caracteres (__char__), palabras (__string__), etc.
+
+Las variables deben ser declaradas primero, lo que deja a un lado el espacio en la memoria del computador para guardar información. Cuando declaramos una variable, se necesita especificar su tipo de dato (como __int__), lo cual indica que tipo de información será guardada. Después de establecer el nombre y el tipo de dato, este puede ser asignado a un valor para la variable:
+
+```
+int x;  // Declare x es una variable entera
+x = 12; // Asigna una valor a la variable x
+```
+
+Este código hace lo mismo, pero es más corto:
+
+```
+int x = 12; // Declara que x es una variable entera y asigna un valor
+```
+
+El nombre del tipo de dato está incluido en la línea de código que declara a la variable, pero no se vuelve a escribir. Cada vez que se escribe el tipo de datos en frente del nombre de la variable, el computador piensa que estás tratando de declarar una nueva variable. No puedes tener dos variables con el mismo nombre en la misma parte del programa, así el programa tendría un error:
+
+```
+int x; // Declara x como una variable entera int x = 12; 
+// ERROR! no puedes tener dos variables llamadas x
+```
+
+### Las variables (constantes) de Processing.
+
+Processing tiene una serie de variables especiales para almacenar información acerca del programa mientras este corre. Por ejemplo, el largo (__width__) y el alto (__height__). Estos valores son establecidos por la función _size()_. Estos pueden ser usados para dibujar elementos relativos al tamaño de la ventana, incluso si la línea _size()_ cambia.
+
+### Ejemplo 3: ajustar el tamaño.
+
+En este ejemplo, cambiamos los parámetros en base a  _size()_, para ver como funciona:
+
+![Usando constantes width y height](imagen35.jpg)
+
+```
+size (480, 120);
+smooth ();
+line (0, 0, width, height); // Linea desde (0,0) a (480, 120) 
+line (width, 0, 0, height); // Linea desde (480, 0) a (0,120) 
+ellipse (width/2, height/2, 60, 60);
+```
+
+Otra variable especial le hace seguimiento al estado del valor del mouse y el teclado y mucho más. Estos son discutidos en el capítulo 5.
+
+### Un poco de Matemáticas.
+
+La gente a menudo asume que las matemáticas y la programación son lo mismo. Aunque el conocimiento de matemáticas puede ser muy útil para cierto tipo de código, la aritmética básica cubre las partes más importantes.
+
+### Ejemplo 4: Aritmética básica.
+
+![Matemática básica](imagen36.jpg)
+
+```
+size (480, 120);
+int x = 25;
+int h = 20;
+int y = 25;
+rect (x, y, 300, h);       // arriba
+x = x + 100; 
+rect (x, y + h, 300, h);   // mitad
+x = x - 250;
+rect (x, y + h*2, 300, h); // Abajo
+```
+
+En código, los símbolos como +, -, y * son colocados entre dos valores, crean 9 y 1024 - 512 son expresiones. Los operadores para las operaciones matemáticas básicas son:
+
++ Adición
+- Sustracción
+* Multiplicación
+/ División
+= Asignación
+
+Processing tiene reglas establecidas para definir cuáles operadores tiene prioridad sobre los demás, es decir cuales cálculos se hacen primero, segundo, tercero, y así sucesivamente. Estas reglas se definen en el orden en el cuál el código está corriendo. Un poco de conocimiento acerca del largo camino para la comprensión de cómo funciona una línea corta de código como este:
+
+```
+int x = 4 + 4 * 5; // Asigna 24 a la variable x
+```
+
+La expresión 4 * 5 es evaluada primero porque la multiplicación tiene mayor prioridad. Segundo, 4 es agregado al producto de 4 * 5 para dar 24. Por último, el operador asignación (el símbolo de igual) tiene la menor prioridad, el valor 24 es asignado a la variable x. Esto es clarificado con un paréntesis, pero el resultado es el mismo:
+
+```
+int x = 4 + ( 4 * 5 ); // Asigna 24 a la variable x
+```
+
+Si quieres forzar para que la adición sea primero, sólo tienes que mover el paréntesis. Porque el paréntesis tiene la mayor prioridad que la multiplicación, el orden es cambiado y el cálculo es afectado:
+
+```
+int x = ( 4 + 4 ) * 5; // Asigna 40 a la variable x
+```
+
+Un acrónimo para este orden es enseñado en clases de matemáticas: PEMDAS, el cual se encuentra en paréntesis, exponentes, multiplicaciones, divisiones, adiciones y sustracciones, donde el paréntesis tiene la mayor prioridad y la sustracción la menor. El orden completo de operaciones se encuentra en los apéndices.
+
+Algunos cálculos son usados más frecuentemente en programación que los métodos abreviados que se han desarrollado; siempre es bueno guardar algunas pulsaciones de tecla. Por ejemplo, le puedes agregar a una variable, o sustraer de ella, con un sólo operador:
+
+```
+x += 10; // Esto es igual a x=x+10
+y -= 15; // Esto es igual a y=y-15
+```
+
+Es también común agregar o sustraer 1 de una variable, así que los atajos existen para esto también. Los operadores ++ y -- hacen esto:
+
+```
+x++; // Esto es igual a x = x + 1 
+y--; // Esto es igual a y = y - 1
+```
+
+Más atajos pueden ser encontrados en la referencia.
+
+### Repetición
+
+A medida que escribes más programas, notarás que los patrones se asemejan cuando las líneas de código se repiten. Pero con leves variaciones. Una estructura de código es llamada for loop para hacer posible correr una línea de código más de una vez para condensar este tipo de repetición en menos líneas. Esto hace más modular tu programa y más fácil de cambiar.
+
+### Ejemplo 5: Hacer lo mismo una y otra vez.
+
+Este ejemplo tiene el tipo de patrón que puede ser simplificado para for loop:
+
+
+
+
+
+
+
 
 
 
