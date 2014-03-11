@@ -5,6 +5,6 @@ Aquí podrás acceder a un material libre, donde encontraras un contenido para a
 
 ![Processing](http://blog.albagcorral.com/wp-content/uploads/2008/11/about.jpg)
 
-[Profundización](PROFUNDIZACIÓN.md)
+[Profundización - Guía de inicio](PROFUNDIZACIÓN.md)
 
-[Divulgación](DIVULGACION.md)
+[Divulgación - ¿Porqué y para qué processing?](DIVULGACION.md)
