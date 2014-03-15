@@ -8,3 +8,5 @@ Aquí podrás acceder a un material libre, donde encontraras un contenido para a
 [PROFUNDIZACIÓN - Guía de inicio](PROFUNDIZACION.md)
 
 [DIVULGACIÓN - ¿Porqué y para qué processing?](DIVULGACION.md)
+
+[PRACTICAS - Tareas Iniciales](PRACTICAS.md)
