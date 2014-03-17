@@ -1,6 +1,6 @@
 ## Practicas.
 
-0. Fijar una tamaño de pantalla. [solucion](solucion1.md)
+0. Fijar una tamaño de pantalla. [solución](solución1.md)
 
 1. Entender el sistema de coordenadas de processing.
 
