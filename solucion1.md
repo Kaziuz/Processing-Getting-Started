@@ -1,9 +1,7 @@
-
 ```
 //  Fijando un tamaño de pantalla
 
-/*  Siempre que empezamos cualquier proyecto en Processing, debemos iniciar eligiendo un tamaño de pantalla. Normalmente estos parámetros se inicializan escribiendo un ancho y un largo, precedido de la palabra size();
-*/
+//  Siempre que empezamos cualquier proyecto en Processing, debemos iniciar eligiendo un tamaño de pantalla.  //  Normalmente estos parámetros se inicializan escribiendo un ancho y un largo, precedido de la palabra      //  size();
 
 //  un ejemplo seria así:
 
