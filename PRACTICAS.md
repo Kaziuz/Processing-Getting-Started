@@ -4,7 +4,7 @@
 
 1. Entender el sistema de coordenadas de processing. [solución](solución2.md)
 
-2. Dibujar una línea.
+2. Dibujar una línea. [solución](solución3.md)
 
 3. Dibujar un cuadrado.
 
