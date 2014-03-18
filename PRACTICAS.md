@@ -2,7 +2,7 @@
 
 0. Fijar una tamaño de pantalla. [solución](solución1.md)
 
-1. Entender el sistema de coordenadas de processing.
+1. Entender el sistema de coordenadas de processing. [solución](solución2.md)
 
 2. Dibujar una línea.
 
