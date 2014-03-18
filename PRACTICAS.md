@@ -6,7 +6,7 @@
 
 2. Dibujar una línea. [solución](solución3.md)
 
-3. Dibujar un cuadrado.
+3. Dibujar un cuadrado. [solución](solución4.md)
 
 4. Dibujar un circulo.
 
