@@ -5,9 +5,9 @@ Cuando dibujamos cualquier figura en una hoja de papel, podemos hacer pequeños 
 Processing es un programa de computadora que permite hacer bocetos de manera escrita. Pero antes de que el programa pueda entender que queremos hacer, necesitamos aprender un lenguaje que la maquina puede descifrar. Así mismo cuando queremos comunicarnos en ingles, hay que hablar en ingles, el software Processing entiende un lenguaje destilado de Java, que es un lenguaje para escribir software de computadoras.
 
 Ahora, ¿ Cómo hace el computador para entender todo ese texto que escribimos ?.
-Antes de responder esa pregunta, tenemos que enterarnos de que una computadora es solamente una maquina como cualquier otra, que sin las ordenes que le damos, esas maquinas serian incapaces de realizar cualquier acción, en contraparte; ellas están en la capacidad de realizar operaciones matemáticas a velocidades muy altas. Un lenguaje de programación como java, se compone de oraciones que son escritas y entendidas por un ser humano, cuando esa persona termina de escribir sus oraciones en la computadora y esta seguro de que su programa esta escrito de la manera correcta. Todas esas oraciones pasan a ser convertidas en 1 y 0, que es lo que el computador entiende. De esta manera; es que podemos comunicarnos con un computador y darle ordenes por medio de la creación de un programa para computador.
+Antes de responder esa pregunta, tenemos que enterarnos de que una computadora es solamente una maquina como cualquier otra, que sin las ordenes que le damos, esas maquinas serian incapaces de realizar cualquier acción, en contraparte; ellas están en la capacidad de realizar operaciones matemáticas a velocidades muy altas. Un lenguaje de programación como java, se compone de oraciones que son escritas y entendidas por un ser humano, cuando esa persona termina de escribir sus oraciones en la computadora y esta seguro de que su programa esta escrito de la manera correcta. Todas esas oraciones pasan a ser convertidas en 1 y 0, que es lo que el computador entiende, y de esta forma; es que podemos comunicarnos con ellos y darle ordenes por medio de oraciones escritas.
 
-Te parece complicado ?, la verdad es que no lo es; Processing se destaca porque tiene una sintaxis (esas oraciones) fácil de aprender, ya que con solo una oración (línea de código) podemos ver un circulo en la pantalla, unas cuantas líneas mas y ese circulo sigue la posición del ratón.
+Te parece complicado ?, la verdad es que no lo es; Processing se destaca porque tiene una sintaxis (esas oraciones) fácil de aprender, ya que con solo una oración (línea de código) podemos ver un circulo en la pantalla, unas cuantas líneas mas y ese circulo puede seguir la posición del ratón.
 
 Processing en la vida cotidiana se aplica a diferentes usos, puede ser una alternativa al software de pago como Flash, además; muchos de los programas para diseño, al ser privativos; con un tiempo de practica puede ser fácil manipularlos y fijar proyectos rápidamente, pero él usuario final avanzado, puede experimentar en algún momento limitantes de la misma herramienta, conllevando a que su creatividad se vea restringida por un software, esto es debido a que el usuario final no puede acceder a las entrañas del programa para re-diseñarlo y adaptarlo a sus necesidades.
 
@@ -16,9 +16,9 @@ Por otra parte, Processing es dictado en universidades alrededor del mundo para 
 Imagínate describiendo todos los pasos necesarios para enseñarle a un robot a vestirse. Muchas personas resolverían el problema con decirle al robot:
 
 1.	busca la ropa.
-2.	Busca una camisa y un pantalón.
-3.	Ponte la camisa
-4.	Ponte el pantalón
+2.	busca una camisa y un pantalón.
+3.	ponte la camisa
+4.	ponte el pantalón
 
 Otra solución mas detallada seria:
 
