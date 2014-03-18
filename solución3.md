@@ -6,7 +6,9 @@ Es como esto, imagínate que sales de tu casa y te diriges a la casa de un amigo
 */
 
 //  finalmente para dibujar una linea en processing debemos escribir de la siguiente manera:
+```
 line(0, 0, 70, 80);
+```
 
 /*
 La anterior función dibujara una línea que tiene de partida el punto de origen con coordenadas finales  en x = 70 y Y = 80;
