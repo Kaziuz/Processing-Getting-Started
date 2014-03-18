@@ -2,4 +2,4 @@ el sistema de coordenadas de processing funciona parecido a un plano cartesiano,
 
 En esta imagen esta mejor explicado todo lo anterior.
 
-[Coordenas y ubicación](http://educacion.esencial.co/wiki/_media/tp:guias:grafico1.png?w=800&tok=811c63)
+![Coordenas y ubicación](http://educacion.esencial.co/wiki/_media/tp:guias:grafico1.png?w=800&tok=811c63)
