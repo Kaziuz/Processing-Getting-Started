@@ -18,6 +18,6 @@
 
 8. Remover el color del borde del circulo.[solución](solución9.md)
 
-9. Fijar un background para el sketch.
+9. Fijar un background para el sketch.[solución](solución10.md)
 
 10. Que el circulo siga el mouse.
