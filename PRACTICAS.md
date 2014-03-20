@@ -20,4 +20,4 @@
 
 9. Fijar un background para el sketch               [solución](solución10.md)
 
-10. Que el circulo siga el mouse                    [solución](solución11.md)
+10. Que el circulo siga el mouse                    [solución](solución11.md)
