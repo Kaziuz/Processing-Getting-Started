@@ -8,7 +8,7 @@
 
 3. Dibujar un cuadrado                              [solución](solución4.pde)
 
-4. Dibujar un circulo                               [solución](solución5.md)
+4. Dibujar un circulo                               [solución](solución5.pde)
 
 5. Cambiar el color de fondo del circulo            [solución](solución6.md)
 
