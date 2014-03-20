@@ -12,11 +12,11 @@
 
 5. Cambiar el color de fondo del circulo.[solución](solución6.md)
 
-6. cambiar el color de borde del circulo.
+6. Cambiar el color de borde del circulo.
 
-7. remover el color del fondo del circulo.
+7. Remover el color del fondo del circulo.
 
-8. remover el color del borde del circulo.
+8. Remover el color del borde del circulo.
 
 9. Fijar un background para el sketch.
 
