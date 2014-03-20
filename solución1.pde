@@ -1,4 +1,4 @@
-```java
+```
 /* Fijando un tamaño de pantalla
 
 Siempre que empezamos cualquier proyecto en Processing, debemos iniciar eligiendo un tamaño de pantalla.
