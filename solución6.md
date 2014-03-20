@@ -33,3 +33,11 @@ Hay tres modos de pintado en processing.
 fill( 255, 0, 0 );
 ellipse(45, 45, 78, 78);
 ```
+
+3. RGBA
+--> Es igual al modo anterior, solo que agregamos un cuarto parametro que es la opacidad o Alpha. Esto permite que los colores de las figuras se unan.
+
+```
+fill( 255, 0, 0, 120 );
+ellipse(45, 45, 78, 78);
+```
