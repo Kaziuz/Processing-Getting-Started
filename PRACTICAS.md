@@ -10,7 +10,7 @@
 
 4. Dibujar un circulo                               [solución](solución5.pde)
 
-5. Cambiar el color de fondo del circulo            [solución](solución6.md)
+5. Cambiar el color de fondo del circulo            [solución](solución6.pde)
 
 6. Cambiar el color de borde del circulo            [solución](solución7.md)
 
