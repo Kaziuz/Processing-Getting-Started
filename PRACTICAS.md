@@ -12,7 +12,7 @@
 
 5. Cambiar el color de fondo del circulo.[solución](solución6.md)
 
-6. Cambiar el color de borde del circulo.[solución](solución7.md)
+6. Cambiar el color de borde del circulo.[solución](solución7.md)
 
 7. Remover el color del fondo del circulo.
 
