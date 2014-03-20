@@ -1,4 +1,3 @@
-
 El bloque setup() es donde se inicializa el programa. Imagínate que estas jugando super mario, cuando empieza el juego, tu decides si deseas iniciar el juego para dos jugadores o un jugador, cuando realizas esto; solo se hace una vez en el juego y eso es exactamente lo mismo que se hace en el bloque setup().
 Inicializamos el tamaño de la pantalla, un color de fondo para nuestra pantalla de dibujo.
 
@@ -8,7 +7,7 @@ Es un bucle que se esta actualizando constantemente para informar al usuario de 
 
 El programa esta comentado para facilitar la lectura y el procesamiento de cada función en el programa.
 
-```
+```java
 //  Iniciamos el programa con el bloque setup
 void setup()
 {
