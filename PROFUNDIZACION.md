@@ -1063,6 +1063,37 @@ for (int y = 32; y <= height; y += 8)
   }
  }
  ```
+ 
+ 
+## CAPÍTULO 5
+  
+### RESPUESTA
+
+El código que responde a la entrada del mouse, el teclado y otros dispositivos de entrada tiene que funcionar continuamente. Para poder empezar, debemos conocer dos métodos fundamentales en Processing.
+
+## Ejemplo 1: La función draw()
+
+Para ver cómo funciona draw(), corremos este ejemplo:
+
+```
+void draw()
+{
+ //muestra los frames en la consola de Processing
+ println(“yo estoy dibujando”);
+ println(frameCount);
+}
+```
+Saldrá esto:
+
+yo estoy dibujando
+1
+yo estoy dibujando
+2
+...
+````
+
+El código dentro de los corchetes del bloque draw() corre desde arriba hasta abajo, y se repite indefinidamente hasta que presionas stop o cierras la ventana. Cada vuelta a través de draw() es llamada por la función frameCount(). 
+
 
 
 
