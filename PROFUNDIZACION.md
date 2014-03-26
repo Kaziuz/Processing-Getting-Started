@@ -1062,9 +1062,8 @@ for (int y = 32; y <= height; y += 8)
    ellipse (x + y, y, 16 - y/10.0, 16 - y/10.0);
   }
  }
- ```
- 
- 
+````
+
 ## CAPÍTULO 5
   
 ### RESPUESTA
@@ -1090,7 +1089,6 @@ yo estoy dibujando
 yo estoy dibujando
 2
 ...
-````
 
 El código dentro de los corchetes del bloque draw() corre desde arriba hasta abajo, y se repite indefinidamente hasta que presionas stop o cierras la ventana. Cada vuelta a través de draw() es llamada por la función frameCount(). 
 
