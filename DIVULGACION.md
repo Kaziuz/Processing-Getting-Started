@@ -2,7 +2,7 @@
 
 ## Tweet.
 
-__Processing__ es un programa que permite hacer imágenes interactivas, representación de informes y gráficos generativos en tiempo real. 
+__Processing__ es un programa que permite hacer imágenes interactivas, visualización de datos y gráficos generativos en tiempo real. 
 
 ## Facebook.
 
