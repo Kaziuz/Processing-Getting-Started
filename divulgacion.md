@@ -3,19 +3,15 @@
 __Processing__ es un programa que permite hacer imágenes interactivas, visualización de datos y gráficos generativos en tiempo real. 
 
 
-puede usar el ejemplo de la nave en la historieta, que en la imaginación se le puede dar vida, y que processing permite darle esa vida así como volverla interactiva.
+Las imagenes como pinturas en cuadros,historietas o las fotos de las revistas, representan momentos estaticos o memorias de quien realiza la imagen. __Processing__ es un software que permite transformar imagenes quietas en graficos interactivos, ya que estos pueden reaccionar a diversos factores externos, como por ejemplo al pulsar una tecla del computador, mover el mouse o un sonido._Delicate BounDaries_ de __chris sugrue__ [link](https://vimeo.com/1007230), es una instalación interactiva donde en una pantalla se proyecta un ecosistema donde viven bichos, que cuando la persona toca esa pantalla, los bichos salen de su habitat para incorporarse en el cuerpo del usuario.
 
-En la parte de la obra de chris sugrue puedes decir simplemente que son bichos que se suben por la mano al tocar la pantalla.
+__Procesing__ támbien permite que los computadores puedan crear imagenes por medio de formulas matematicas,  este proceso puede generar imagenes que son alucivas a la naturaleza como por ejemplo Arboles, plantas y flores. __György Kepes__ es un artista que usa los procesos del arte generativo para crear imagenes que evolucionan en tiempo real. [link](http://butdoesitfloat.com/The-line-that-describes-the-beautiful-is-elliptical-It-has-simplicity)
 
-También volver a nombrar los tres valores
 
-Cuando observamos cualquier imagen, nos p 
-
-Cuando se dibuja con una hoja de papel, se pueden hacer juicios sobre esas pinturas para darle vida a ellas en nuestra imaginación. Ahora, suponga que puedes depositar esos bocetos en una caja, y espera un tiempo; y luego cuando la abre… su dibujo puede cobrar vida, se anima por si solo y tiene alguna característica que lo distingue. Este es el caso de _Delicate BounDaries_ de __chris sugrue__ [link](https://vimeo.com/1007230), una obra donde figuras de origen microscópico son generadas por computador y salen de su hábitat cuando su entorno es interceptado por la acción de un humano. Paralelamente, puedes solo ingresar los ingredientes a esa caja, para que ella cree por si sola una imagen magnifica, este es el caso de las imágenes creadas por computadora o arte generativo, como por ejemplo __Content is Queen__ de __Sergio Albiac__ [link](http://www.ubicuostudio.com/es/filosofia-del-software-es/sergio-albiac-artista-programador/) La cual trata sobre una serie de videos tomados de internet, y son modificados por __Processing__ para generar nuevas imágenes a partir de los originales.
 
 ## Descripción y practicas.
 
-Cuando dibujamos cualquier figura en una hoja de papel, podemos hacer pequeños trazos que siempre terminan en figuras, que el diseño gráfico llama bocetos. Pero cuando tomamos esa imagen, y la capturamos en una fotografía o la escaneamos, tenemos una representación digital de ese boceto. Por ejemplo: las maquinas de escribir, que en décadas atrás se usaban para redactar documentos y realizar cartas; fue reemplazada por un tipo de tecnología digital como el computador, el cual posee un software llamado Word, que permite reemplazar la maquina de escribir.
+Cuando dibujamos cualquier figura en una hoja de papel, podemos hacer pequeños trazos que siempre terminan en figuras, que el diseño gráfico llama bocetos. Pero cuando tomamos esa imagen, y la capturamos en una fotografía, tenemos una representación digital de ese boceto. Por ejemplo: las maquinas de escribir, que en décadas atrás se usaban para redactar documentos y realizar cartas; fue reemplazada por un tipo de tecnología digital como el computador, el cual posee un software llamado Word, que permite reemplazar la maquina de escribir.
 
 __Processing__ es un programa de computadora que permite hacer bocetos de manera escrita. Pero antes de que el programa pueda entender que queremos hacer, nosotros necesitamos aprender un lenguaje que la maquina puede descifrar, en pocas palabras necesitamos comunicarnos con la maquina. De este modo,  así mismo cuando queremos comunicarnos con un extranjero y debemos hablar en su idioma para poder entablar una conversación, el software __Processing__ entiende un lenguaje destilado de Java, que es un lenguaje para escribir software de computadoras.
 
