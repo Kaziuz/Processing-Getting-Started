@@ -1,10 +1,10 @@
 ### DIVULGACIÓN.
 
-## Tweet.
+
 
 __Processing__ es un programa que permite hacer imágenes interactivas, visualización de datos y gráficos generativos en tiempo real. 
 
-## Facebook.
+
 
 Cuando se dibuja con una hoja de papel, se pueden hacer juicios sobre esas pinturas para darle vida a ellas en nuestra imaginación. Ahora supone que puedes depositar esos bocetos en una caja, esperas; y luego cuando la abres… tu dibujo puede cobrar vida, se anima por si solo y tiene alguna característica que lo distingue. Este es el caso de _Delicate BounDaries_ de __chris sugrue__ [link](https://vimeo.com/1007230), una obra donde figuras de origen microscópico son generadas por computador y salen de su habitad cuando su entorno es interceptado por la acción de un humano. Paralelamente, puedes solo ingresar los ingredientes a esa caja, para que ella cree por si sola una imagen magnifica, este es el caso de las imágenes creadas por computadora o arte generativo, como por ejemplo __Content is Queen__ de __Sergio Albiac__ [link](http://www.ubicuostudio.com/es/filosofia-del-software-es/sergio-albiac-artista-programador/) La cual trata sobre una serie de videos tomados de internet, los cuales son procesados por __Processing__ para generar nuevas imágenes a partir de los originales.
 
