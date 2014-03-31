@@ -7,6 +7,8 @@ Las imagenes como pinturas en cuadros,historietas o las fotos de las revistas, r
 
 __Procesing__ támbien permite que los computadores puedan crear imagenes por medio de formulas matematicas,  este proceso puede generar imagenes que son alucivas a la naturaleza como por ejemplo Arboles, plantas y flores. __György Kepes__ es un artista que usa los procesos del arte generativo para crear imagenes que evolucionan en tiempo real. [link](http://butdoesitfloat.com/The-line-that-describes-the-beautiful-is-elliptical-It-has-simplicity)
 
+Finalmente
+
 
 
 ## Descripción y practicas.
