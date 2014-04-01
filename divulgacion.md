@@ -299,7 +299,7 @@ float miRuido_2(float value)
 ```
 finalmente la figura podría evolucionar en esta forma:
 
-![Arte Generativo](https://github.com/Kaziuz/Processing-Getting-Started/blob/master/unmundocomplicado.png)
+![Arte Generativo](unmundocomplicado.png)
 
 Finalmente, nuestra ultima practica será tomar los datos generados por un controlador MIDI, y realizar una visualización de estos datos. Por ejemplo, si presionamos DO entonces __Processing__ debe dibujar un circulo, si presionamos RE entonces __Processing__ debe dibujar un circulo y así sucesivamente.
 
@@ -316,7 +316,7 @@ Para abrir el ejemplo nos vamos a la pestaña __FILE__ y luego __EXAMPLES__, se 
 
 Yo estoy usando un akaiLDP8, por lo que después de ejecutar el código, me a salido esto en consola:
 
-![Ejemplo](https://github.com/Kaziuz/Processing-Getting-Started/blob/master/midiexample.png)
+![Ejemplo](midiexample.png)
 
 ```
 Available MIDI Devices:
@@ -483,6 +483,7 @@ void noteOff(int channel, int pit, int vel)
     background(0);
   }
 }
+````
 
 Finalmente podemos ver una aplicación en vivo de este tipo de sistemas, ruteando la salida MIDI de un programa como Ableton Live a Processing. [link]( https://www.youtube.com/watch?v=duh7buY594E)
 
