@@ -299,7 +299,7 @@ float miRuido_2(float value)
 ```
 finalmente la figura podría evolucionar en esta forma:
 
-![Arte Generativo](midiexample.png)
+![Arte Generativo](https://github.com/Kaziuz/Processing-Getting-Started/blob/master/unmundocomplicado.png)
 
 Finalmente, nuestra ultima practica será tomar los datos generados por un controlador MIDI, y realizar una visualización de estos datos. Por ejemplo, si presionamos DO entonces __Processing__ debe dibujar un circulo, si presionamos RE entonces __Processing__ debe dibujar un circulo y así sucesivamente.
 
