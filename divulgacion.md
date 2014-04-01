@@ -6,7 +6,7 @@ Las imágenes como pinturas en cuadros, historietas o las fotos de las revistas,
 
 __Processing__ también permite que los computadores puedan crear imágenes por medio de formulas matemáticas,  este proceso puede generar imágenes que son alusivas a la naturaleza como por ejemplo arboles, plantas y flores. __György Kepes__ es un artista que usa los procesos del arte generativo para crear imágenes que evolucionan en tiempo real. [link](http://butdoesitfloat.com/The-line-that-describes-the-beautiful-is-elliptical-It-has-simplicity)
 
-Finalmente, __Processing__ es una gran herramienta para procesar y visualizar datos en tiempo real. Los datos son cualquier información que se pueda convertir en números y que cambie con el tiempo. Por ejemplo las unidades de medida, el clima o los votos en tiempo de elecciones. En la música, las notas también se pueden representar como datos por medio del protocolo MIDI, normalmente usado para comunicar diversos aparatos musicales entre si. En el campo visual, el MIDI también es usado como herramienta de visualización para conciertos en vivo, reemplazando las luces por sistemas inteligentes visuales sincronizados en tiempo real.
+Finalmente, __Processing__ es una gran herramienta para procesar y visualizar datos en tiempo real. Los datos son cualquier información que se puede representar numericamente y que esta en constante cambio. Las unidades de medida, el clima o los votos en tiempo de elecciones son ejemplos de datos. En la música, las notas también se pueden representar como datos por medio del protocolo MIDI, normalmente usado para comunicar diversos aparatos musicales entre si. En el campo visual, el MIDI también es usado como herramienta de visualización para conciertos en vivo, reemplazando las luces por sistemas inteligentes visuales sincronizados en tiempo real.
 Tenemos como referente a __Etienne de Crécy__ y __1024__ que a mi parecer son los mas innovadores en este asunto de las sincronización de imagen en tiempo real. [link](https://www.youtube.com/watch?v=vXE2x3y51Fk)
 
 ## Descripción y practicas.
@@ -26,7 +26,7 @@ Adentrémonos un poco en lo que para mi es el fascinante mundo de la programaci�
 3.	ponte la camisa.
 4.	ponte el pantalón.
 
-Pero al intentar ejecutar la orden número uno, el robot colapse porque no sabe donde esta la ropa, entonces quizá debemos ser más específicos.
+Pero al intentar ejecutar la orden número uno, el robot puede perderse porque no sabe donde esta la ropa, entonces quizá debemos ser más específicos.
 Otra solución mas detallada seria:
 
 1.	dirígete al closet.
@@ -42,7 +42,7 @@ Otra solución mas detallada seria:
 11.	Ponte la camisa
 12.	Ponte el pantalón.
 
-Hay ocasiones en que, incluso, debemos ser mas explícitos y  descriptivos. Programar una computadora es, sencillamente, describir los pasos necesarios para resolver un problema. Por consiguiente, para dibujar animaciones,  podríamos usar pasos similares a los que se suelen realizar al hacer, por ejemplo, cálculos complejos y análisis estadísticos. 
+Hay ocasiones en que, incluso, debemos ser mas explícitos y  descriptivos. Programar una computadora es, sencillamente, describir los pasos necesarios para resolver un problema. Por consiguiente, para dibujar imagenes y realizar animaciones,  podríamos usar pasos similares a los que se suelen realizar al hacer, por ejemplo, cálculos complejos y análisis estadísticos. 
 
 Este es el punto fuerte de __Processing__, ya que al tratarse de un lenguaje de programación, todos nuestros dibujos pueden ser interactivos: esto quiere decir que esos gráficos en pantalla pueden reaccionar al teclado, al presionar el ratón y con ayuda de cámaras; podemos hacer seguimiento de colores o reconocimiento de rostros. Esa es la gran diferencia de dibujar con un papel y usar una computadora. __Processing__ puede hacer que simples esbozos se conviertan en “dibujos inteligentes”, ya que esos gráficos pueden tomar decisiones o quizás puedan reaccionar a algo si así lo queremos. En definitiva, cuando estamos dibujando por medio de código podemos hacer la semejanza de que estamos creando un universo por medio de un lenguaje escrito.
 
@@ -299,7 +299,7 @@ float miRuido_2(float value)
 ```
 finalmente la figura podría evolucionar en esta forma:
 
-pober imagen
+![Arte Generativo](unmundocomplicado.png)
 
 Finalmente, nuestra ultima practica será tomar los datos generados por un controlador MIDI, y realizar una visualización de estos datos. Por ejemplo, si presionamos DO entonces __Processing__ debe dibujar un circulo, si presionamos RE entonces __Processing__ debe dibujar un circulo y así sucesivamente.
 
@@ -315,6 +315,8 @@ Después de tener instalada nuestra librería, abriremos un ejemplo de esa libre
 Para abrir el ejemplo nos vamos a la pestaña __FILE__ y luego __EXAMPLES__, se nos abrirá una pestaña y debemos buscar en __contributed libraries__ la carpeta __The MIDIBUS__ y abrir el ejemplo __BASIC__
 
 Yo estoy usando un akaiLDP8, por lo que después de ejecutar el código, me a salido esto en consola:
+
+![Ejemplo](https://github.com/Kaziuz/Processing-Getting-Started/blob/master/midiexample.png)
 
 ```
 Available MIDI Devices:
