@@ -25,9 +25,9 @@ rutinas diarias de estudio
 ---
 INICIAR CON:
 
-[PROFUNDIZACIÓN - Guía de inicio para ser un samurái en processing](PROFUNDIZACION.md)
+[PROFUNDIZACIÓN - Guía de inicio para ser un samurái en processing](profundizacion.md)
 
-[DIVULGACIÓN - ¿Porqué y para qué processing?](divulgacion.md)
+[DIVULGACIÓN - ¿Porqué y para qué processing?](profundizacion.md)
 
 
 
