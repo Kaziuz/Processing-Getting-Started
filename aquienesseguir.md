@@ -24,7 +24,7 @@
 22. @golan
 23. @shiffman
 24. @zachlieberman
-25. 
+25. @kaziuz8bit
 
 # Grupo en facebook
 
