@@ -326,7 +326,7 @@ Nuestra la figura podría evolucionar en esta forma:
 
 ![Arte Generativo](imagenes/unmundocomplicado.png)
 
-Finalmente, nuestra ultima practica será tomar los datos generados por un controlador MIDI, y realizar una visualización de estos datos. Por ejemplo, si presionamos DO entonces __Processing__ debe dibujar un circulo, si presionamos RE entonces __Processing__ debe dibujar un circulo y así sucesivamente.
+Finalmente, nuestra ultima practica será tomar los datos generados por un controlador MIDI, y realizar una visualización de estos datos. Por ejemplo, si presionamos DO entonces __Processing__ debe dibujar un circulo, si presionamos RE entonces __Processing__ debe dibujar un triangulo y así sucesivamente.
 
 Debemos empezar por descargar una librería en Processing. Una librería es un paquete de código que tiene alguna funcionalidad y extiende las funcionalidades de __Processing__ . Con ayuda de librerías, podemos conectar la kinect a __Processing__ para que nuestros dibujos sean reactivos a nuestros movimientos. Puedes echar un vistazo a todas las librerías que tiene __Processing__ en este [link]( http://processing.org/reference/libraries/)
 
@@ -335,7 +335,7 @@ Empieza por dirigirte al [link]( http://www.smallbutdigital.com/themidibus.php) 
 
 Si no sabes como instalar la librería, puedes dirigirte a este [link]( http://wiki.processing.org/w/How_to_Install_a_Contributed_Library) donde encontraras una ayuda para Windows, Mac y Linux.
 
-Después de tener instalada nuestra librería, abriremos un ejemplo de esa librería llamada ‘Basic’, este nos permitirá testear nuestro controlador MIDI.
+Después de tener instalada nuestra librería, abriremos un ejemplo de ella llamada ‘Basic’, este nos permitirá testear nuestro controlador MIDI.
 
 Para abrir el ejemplo nos vamos a la pestaña __FILE__ y luego __EXAMPLES__, se nos abrirá una pestaña y debemos buscar en __contributed libraries__ la carpeta __The MIDIBUS__ y abrir el ejemplo __BASIC__
 
