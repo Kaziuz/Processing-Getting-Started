@@ -67,9 +67,9 @@ Debajo, podemos mirar una gran zona blanca; llamada también editor de texto. Es
 Empecemos por escribir esto:
 
 ```
-size(250, 250); //  tamaño de nuestra hoja de dibujo
-background(0);//  Color de la hoja
-fill(255, 0, 0);// color del circulo
+size(250, 250);                     // Tamaño de nuestra hoja de dibujo
+background(0);                      // Color de la hoja
+fill(255, 0, 0);                    // Color del circulo
 ellipse(width/2, height/2, 60, 60); // pintamos un circulo en la pantalla
 ```
 
@@ -88,16 +88,16 @@ Finalmente, para finalizar con nuestro ejercicio de introducción: realizaremos 
 //  método de inicialización
 void setup()
 {
-  size(250, 250);  //  tamaño de la hoja de dibujo
-  background(0);//  color de fondo de la hoja de dibujo
+  size(250, 250);  //  Tamaño de la hoja de dibujo
+  background(0);   //  Color de fondo de la hoja de dibujo
 }
 
 //  método donde se repite el código dentro, hasta que se presione el botón stop o se cierre la ventana 
 void draw()
 {
-  fill(255, 0, 0);  //  color del circulo
+  fill(255, 0, 0);                  //  color del circulo
   ellipse(mouseX, mouseY, 60, 60);  //  pintamos un circulo
- //  mouseX y mouseY se usan para obtener las coordenadas de la posición del cursor
+  //  mouseX y mouseY se usan para obtener las coordenadas de la posición del cursor
 }
 ```
 
@@ -131,12 +131,12 @@ int centery = 150;
 void setup()
  {
   size(500, 300);   //  Tamaño de la hoja de dibujo
-  background(255);//  Color de fondo de la hoja de dibujo
-  strokeWeight(5);  //  grosor de la línea de dibujo del circulo
+  background(255);  //  Color de fondo de la hoja de dibujo
+  strokeWeight(5);  //  Grosor de la línea de dibujo del circulo
 
   //creacion del circulo con la función de Processing
-  stroke(0, 30);  //  color de la línea de dibujo
-  noFill();      //  quitamos el relleno del circulo
+  stroke(0, 30);                                  //  color de la línea de dibujo
+  noFill();                                       //  quitamos el relleno del circulo
   ellipse(centerx, centery, radius*2, radius*2);  //  pintamos un circulo
 }
 
@@ -145,20 +145,19 @@ void draw()
 
   angle ++;  // incrementamos el circulo sumándole 1 infinitamente
   float rad = radians(angle); 
-  /*  Creamos una variable llamada rad, la cual se incrementara toma el incremento   de angle y lo convierte    en radianes.
-  */
+  
+  //  Creamos una variable llamada rad, la cual se incrementara toma el incremento   de angle y lo convierte    //  en radianes.
 
-  /*  creamos una variable llamada x, y le asignamos el valor almacenado en centerx, a este le sumamos el       valor almacenado en radius y lo multiplicamos por el coseno de la variable rad
-  */
+  //  Creamos una variable llamada x, y le asignamos el valor almacenado en centerx, a este le sumamos el       //  valor almacenado en radius y lo multiplicamos por el coseno de la variable rad
+  
   float x = centerx + (radius * cos(rad));  
 
-  /*  creamos una variable llamada y, y le asignamos el valor almacenado en centery, a este le sumamos el       valor almacenado en radius y lo multiplicamos por el seno de la variable rad
-  */
+  //  Creamos una variable llamada y, y le asignamos el valor almacenado en centery, a este le sumamos el       //  valor almacenado en radius y lo multiplicamos por el seno de la variable rad
 
   float y = centery + (radius * sin(rad)); 
   stroke(20, 50, 70);
 
-  // dibujamos un punto y este a su vez dibujara un circulo
+  //  Dibujamos un punto y este a su vez dibujara un circulo
   point(x, y);
 }
 ```
@@ -168,18 +167,17 @@ De esta manera, nos entrañamos en la función ellipse() y realizamos nuestro pr
 
 Ahora tomando este punto de partida, y añadiendo algo de “random();”, podemos decirle al programa que cree una figura dentro de un estándar que es el método de dibujar un circulo que discernimos anteriormente.
 ```
-//Varianza sobre seno 
 
 float radius = 100; //  radio de nuestra forma
-int centX = 250; //  centro en el eje X
-int centY = 150;//  centro en el eje Y
+int centX = 250;    //  centro en el eje X
+int centY = 150;    //  centro en el eje Y
 
 void setup () 
 { 
   size(500, 300); 
   background(255); 
   strokeWeight(5); 
-  smooth();  //  esta función ayuda a alisar las formas, para que se visualmente se vean //mas definidas
+  smooth();  //  esta función ayuda a alisar las formas, para que se visualmente se vean mas definidas
 
   stroke(0, 30);
   noFill(); 
@@ -188,7 +186,7 @@ void setup ()
   strokeWeight(1);
 
   float x, y;
-  float noiseval = random(10);  //  creamos una variable que generara valores //  aleatorios entre 0 y 10
+  float noiseval = random(10);  //  creamos una variable que generara valores aleatorios entre 0 y 10
 
   //  valores de random en el start point
   float radVariance, thisRadius, rad;
@@ -207,7 +205,9 @@ void setup ()
    // a la variable radVariance le asignamos la función customNoise con el parámetro noiseval, el cual se esta    // incrementado y lo multiplicamos por 30.
     radVariance = 30 * customNoise(noiseval);
 
-   // con esta variable, el dibujo en Processing no dibujo un circulo perfecto, sino que //realiza pequeños      // cambios para realizar petalos.
+   //  con esta variable, el dibujo en Processing no dibujo un circulo perfecto, sino que ç
+   //  realiza pequeños cambios para realizar petalos.
+   
     thisRadius = radius + radVariance; 
     rad = radians(ang);
     x = centX + (thisRadius * cos(rad)); 
@@ -218,7 +218,8 @@ void setup ()
 }
 
    //  función personalizada para realizar el cambio de periodicidad del punto de dibujo
-float customNoise(float value) { 
+float customNoise(float value) 
+{ 
   float retValue = pow(sin(value), 3); 
   return retValue;
 }
@@ -402,17 +403,6 @@ Channel:0
 Pitch:73
 Velocity:127
 
-Note On:
---------
-Channel:0
-Pitch:73
-Velocity:127
-
-Note Off:
---------
-Channel:0
-Pitch:73
-Velocity:127
 ```
 El pitch es la nota que hemos presionado en nuestro controlador MIDI. Entonces podemos decirle a __Processing__ que cuando tal nota sea presionada, entonces dibuje tal cosa, una elegancia !!!.
 
@@ -438,6 +428,7 @@ void setup()
 
 void draw()
 {
+
 }
 
 //  Este metodo tiene 3 parametros, 1 canal MIDI, 2 la nota presionada y el tercero es la dinamica,
