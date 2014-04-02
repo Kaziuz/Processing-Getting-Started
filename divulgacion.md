@@ -2,22 +2,30 @@
 
 __Processing__ es un programa que permite hacer imágenes interactivas, visualización de datos y gráficos generativos en tiempo real. 
 
-Las imágenes como pinturas en cuadros, historietas o las fotos de las revistas, representan momentos estáticos o memorias de quien realiza la imagen. __Processing__ es un software que permite transformar imágenes quietas en gráficos interactivos, ya que estos pueden reaccionar a diversos factores externos, como por ejemplo al pulsar una tecla del computador, mover el mouse o detectar un sonido._Delicate BounDaries_ de __chris sugrue__ [link](https://vimeo.com/1007230), es una instalación interactiva donde en una pantalla se proyecta un ecosistema donde viven bichos, que cuando la persona toca esa pantalla, los bichos salen de su hábitat para incorporarse en el cuerpo del usuario.
+## Introducción. 
+
+Las imágenes en cuadros, historietas o las fotos de las revistas, representan momentos estáticos o memorias de quien realiza la imagen. __Processing__ es un software que permite transformar imágenes quietas en gráficos interactivos, ya que estos pueden reaccionar a diversos factores externos, como por ejemplo al pulsar una tecla del computador, mover el mouse o detectar un sonido.__Delicate BounDaries__ de __chris sugrue__ [link](https://vimeo.com/1007230), es una instalación interactiva donde se proyecta en una pantalla un ecosistema donde viven bichos,cuando la persona toca esa pantalla, los bichos salen de su hábitat para incorporarse en el cuerpo del usuario.
+
+[Interactivo](http://art-science.univ-paris1.fr/docannexe/image/584/img-3.jpg)
 
 __Processing__ también permite que los computadores puedan crear imágenes por medio de formulas matemáticas,  este proceso puede generar imágenes que son alusivas a la naturaleza como por ejemplo arboles, plantas y flores. __György Kepes__ es un artista que usa los procesos del arte generativo para crear imágenes que evolucionan en tiempo real. [link](http://butdoesitfloat.com/The-line-that-describes-the-beautiful-is-elliptical-It-has-simplicity)
 
-Finalmente, __Processing__ es una gran herramienta para procesar y visualizar datos en tiempo real. Los datos son cualquier información que se puede representar numericamente y que esta en constante cambio. Las unidades de medida, el clima o los votos en tiempo de elecciones son ejemplos de datos. En la música, las notas también se pueden representar como datos por medio del protocolo MIDI, normalmente usado para comunicar diversos aparatos musicales entre si. En el campo visual, el MIDI también es usado como herramienta de visualización para conciertos en vivo, reemplazando las luces por sistemas inteligentes visuales sincronizados en tiempo real.
+[Generativo](http://www.ubicuostudio.com/wp-content/uploads/2012/09/Captura-de-pantalla-2012-09-07-a-las-16.38.50.png)
+
+Finalmente, __Processing__ es una gran herramienta para procesar y visualizar datos en tiempo real. Los datos son cualquier información que se puede representar numericamente y que esta en constante cambio. Las unidades de medida, el clima o los votos en tiempo de elecciones son ejemplos de datos. En la música, las notas también se pueden representar como datos por medio del protocolo MIDI, normalmente usado para comunicar diversos aparatos musicales entre si. En el campo visual, el MIDI también es usado como herramienta de visualización para conciertos en vivo, reemplazando las luces por sistemas inteligentes sincronizados en tiempo real junto con la música.
 Tenemos como referente a __Etienne de Crécy__ y __1024__ que a mi parecer son los mas innovadores en este asunto de las sincronización de imagen en tiempo real. [link](https://www.youtube.com/watch?v=vXE2x3y51Fk)
+
+[visualización](http://audiovisualacademy.com/blog/wp-content/uploads/2012/11/alva-noto-live.jpg)
 
 ## Descripción y practicas.
 
 Cuando dibujamos cualquier figura en una hoja de papel, podemos hacer pequeños trazos que siempre terminan en figuras, que el diseño gráfico llama bocetos. Pero cuando tomamos esa imagen, y la capturamos en una fotografía, tenemos una representación digital de ese boceto. 
 
-__Processing__ es un programa de computadora que permite hacer bocetos digitales interactivos,  escribiendo oraciones (programando) de manera escrita. Pero antes de que el computador pueda saber que queremos hacer, nosotros necesitamos aprender un lenguaje que el programa pueda entender, en pocas palabras necesitamos comunicarnos con la maquina. De este modo,  cuando queremos comunicarnos con un extranjero y debemos hablar en su idioma para poder entablar una conversación, el software __Processing__ entiende un lenguaje destilado de Java, que es un lenguaje para escribir software de computadoras.
+__Processing__ es un programa de computadora que permite hacer bocetos digitales interactivos,  escribiendo oraciones (programando) de manera escrita. Pero antes de que el computador pueda saber que queremos hacer, nosotros necesitamos aprender un lenguaje que el programa pueda entender, en pocas palabras,  necesitamos comunicarnos con la maquina. De este modo,  cuando queremos comunicarnos con un extranjero, debemos hablar en su idioma para poder entablar una conversación, el software __Processing__ entiende un lenguaje destilado de Java, que es un lenguaje para escribir software de computadoras.
 
 Ahora, ¿ Cómo hace el computador para entender todo ese texto que escribimos si el no sabe nuestro idioma ?. Antes de responder esa pregunta, tenemos que enterarnos  que una computadora es solamente una maquina como cualquier otra, que sin una orden, es incapaz de realizar cualquier acción.  De esta forma se establece una comunicación usuario/maquina y se fijan ordenes mas especificas al computador.
 
-¿ Te parece complicado ? la verdad es que no lo es; __Processing__ se destaca porque tiene una sintaxis (esas oraciones) fácil de aprender, ya que con solo una oración (línea de código) podemos ver un circulo en la pantalla;  si escribimos unas cuantas líneas  de código más,  ese circulo puede seguir la posición del ratón. 
+__Processing__ se destaca porque tiene una sintaxis (esas oraciones) fácil de aprender, ya que con solo una oración (línea de código) podemos ver un circulo en la pantalla;  si escribimos unas cuantas líneas  de código más,  ese circulo puede seguir la posición del ratón. 
 
 Adentrémonos un poco en lo que para mi es el fascinante mundo de la programación. Imagínese describiendo todos los pasos necesarios para enseñarle a un robot a vestirse. Muchas personas resolverían el problema con decirle al robot:
 
@@ -50,9 +58,11 @@ Para empezar con __Processing__ debemos dirigirnos a su portal [web]( https://pr
 
 La interfaz de __Processing__ esta compuesta por una serie de botones en la parte superior los cuales pueden ser intuitivos, un botón de start, otro de stop y otros que explicaremos mas adelante. 
 
-Aquí una imagen alusiva al texto anterior
+![iconos](imagenes/imagen5.png)
 
 Debajo, podemos mirar una gran zona blanca; llamada también editor de texto. Esta es la zona mas importante, ya que aquí será donde escribiremos nuestras oraciones o líneas de código.  
+
+![Lienzo](imagenes/imagen6)
 
 Empecemos por escribir esto:
 
