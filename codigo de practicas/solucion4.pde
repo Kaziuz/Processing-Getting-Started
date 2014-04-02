@@ -1,4 +1,3 @@
-```
 /* El bloque setup() es donde se inicializa el programa. Imagínate que estas jugando super mario, 
    cuando empieza el juego, tu decides si deseas iniciar el juego para dos jugadores o un jugador, 
    cuando realizas esto; solo se hace una vez en el juego y eso es exactamente lo mismo que se hace en el 
@@ -28,4 +27,4 @@ void draw()
   ellipseMode( CENTER );            //  El centroide de nuestro circulo sera su centro
   ellipse(mouseX, mouseY, 40, 40);  //  Circulo que se dibujara en la posición del mouse con un ancho y alto                                       // de 40 pixeles.
 }
-```
+
