@@ -3,7 +3,7 @@
 
 Aquí podrás acceder a un material libre, donde encontraras una guia para aprender a programar en el lenguaje [Processing](http://processing.org/). Además de ello, encontraras premisas de porque debes de elegirlo. Seguido de una guía de aprendizaje para el programador amateur.
 
-![Processing](http://blog.albagcorral.com/wp-content/uploads/2008/11/about.jpg)
+![Processing](http://diariowm.files.wordpress.com/2013/07/processing2.jpg)
 ============================================================================================================
 
 ## por donde quieres empezar ?
