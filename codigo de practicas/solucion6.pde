@@ -1,41 +1,53 @@
-```
+//  Iniciamos el codigo inicializando las variables globales
 
-//  Para cambiar el color de cualquier figura en processing, no solo un circulo; usamos la función 
+float radius = 100; //  radio de nuestra forma
+int centX = 250;    //  centro en el eje X
+int centY = 150;    //  centro en el eje Y
 
+void setup () 
+{ 
+  size(500, 300); 
+  background(255); 
+  strokeWeight(5); 
+  smooth();  //  esta función ayuda a alisar las formas, para que se visualmente se vean mas definidas
 
-//  fill();
+  stroke(0, 30);
+  noFill(); 
+  ellipse(centX, centY, radius*2, radius*2);
+  stroke(20, 50, 70);
+  strokeWeight(1);
 
-//  Precedida de una función de dibujo como
+  float x, y;
+  float noiseval = random(10);  //  creamos una variable que generara valores aleatorios entre 0 y 10
 
+  //  valores de random en el start point
+  float radVariance, thisRadius, rad;
 
-//  rect();
+  //  empezamos a crear nuestra forma
+  beginShape();
+  fill(20, 50, 70, 50); //  color de relleno de nuestra forma
 
-o 
+  // realizamos un loop desde 0 hasta 360 grados en incrementos de 1
+  for (float ang=0;ang<=360;ang+=1) 
+{
+    // valores de random en el start point
+    noiseval += 0.1; //  incrementamos la variable noiseval en valores de 0.1
 
-//  ellipse();
+    /* a la variable radVariance le asignamos la función customNoise con el parámetro noiseval,
+       el cual se esta incrementado y lo multiplicamos por 30.
+    */
 
-//  Ejemplo:
+    radVariance = 30 * customNoise(noiseval);
 
-fill(234);
-ellipse(56, 56, 60, 60);
+    /*  con esta variable, el dibujo en Processing no dibujo un circulo perfecto, sino que 
+        realiza pequeños cambios para realizar pétalos.
+    */
 
-//  Hay tres modos de pintado en processing.
-
-/*
-1. Escala de grises:
---> Este es usado solo para colorear usando un color que va de blanco a negro. Sus intermedios pueden ser grises oscuros o grises claros.
-
-2. RGB
---> Esta función nos permite usar una gran posibilidad de colores, normalmente se usan 3 parámetros los cuales corresponden a RGB o Rojo, verde y azul. Por ejemplo si queremos usar el rojo para colorear un color, entonces escribiríamosde esta manera:
-*/
-
-fill( 255, 0, 0 );
-ellipse(45, 45, 78, 78);
-
-/*
-3. RGBA
---> Es igual al modo anterior, solo que agregamos un cuarto parametro que es la opacidad o Alpha. Esto permite que los colores de las figuras se unan.
-
-fill( 255, 0, 0, 120 );
-ellipse(45, 45, 78, 78);
-*/
+    thisRadius = radius + radVariance; 
+    rad = radians(ang);
+    x = centX + (thisRadius * cos(rad)); 
+    y = centY + (thisRadius * sin(rad));
+    curveVertex(x, y);
+  }
+  endShape();
+}
