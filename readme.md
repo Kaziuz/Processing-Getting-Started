@@ -7,6 +7,8 @@ Aquí podrás acceder a un material libre, donde encontraras una guia para apren
 
 # por donde quieres empezar ?
 
+[Introducción por Daniel Shiffman en video]( http://hello.processing.org/)
+
 ---
 ## fortalezas
 
