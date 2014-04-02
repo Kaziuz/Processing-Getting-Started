@@ -1,4 +1,3 @@
-```
 /*
    Para dibujar un cuadrado en processing, debemos usar la función rect(x, y, ancho, alto);
    por default, nuestro cuadrado se empezara a dibujar desde la esquina superior izquierda. Si queremos
@@ -10,4 +9,4 @@
 rectMode( CENTER );
 fill(255, 0, 0);
 rect(56, 56, 30, 30);
-```
+
