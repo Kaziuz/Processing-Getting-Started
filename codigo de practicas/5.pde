@@ -1,4 +1,3 @@
-´´´
 //  Iniciamos el código 
 
 void setup()
@@ -34,4 +33,3 @@ void draw()
   }
 }
 
-```
