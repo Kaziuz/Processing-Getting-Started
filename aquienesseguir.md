@@ -1,4 +1,4 @@
-# Gente en Twitter
+# Gente y movimientos en Twitter
 
 1.  @miguel_v_espada 
 2.  @iragreenberg
@@ -24,4 +24,9 @@
 22. @golan
 23. @shiffman
 24. @zachlieberman
+25. 
+
+# Grupo en facebook
+
+1. https://www.facebook.com/groups/5748903715/?fref=ts
 
