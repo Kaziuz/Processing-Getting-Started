@@ -8,15 +8,34 @@ Aquí podrás acceder a un material libre, donde encontraras una guia para apren
 
 ## por donde quieres empezar ?
 
+# fortalezas
+
 rutinas diarias de estudio
 
-[TUTORIALES EN VIDEO](https://www.youtube.com/playlist?list=PL19223D55BA16ECDF)
+[PRACTICAS](practicas.md)
 
 [MIRA EL CÓDIGO DE OTROS](http://www.openprocessing.org/)
 
-[PRACTICAS](practicas.md)
+[A QUIENES SEGUIR](aquienesseguir.md)
+
+[TUTORIALES EN VIDEO](https://www.youtube.com/playlist?list=PL19223D55BA16ECDF)
+
+[DOCUMENTAL PROCESSING SUBTITULADO](https://vimeo.com/61191770)
+
+============================================================================================================
+
+INICIAR CON:
+
+
+
+
+
+
+
 
 [PROFUNDIZACIÓN - Guía de inicio para ser un samurái en processing](PROFUNDIZACION.md)
 
 [DIVULGACIÓN - ¿Porqué y para qué processing?](divulgacion.md)
+
+
 
