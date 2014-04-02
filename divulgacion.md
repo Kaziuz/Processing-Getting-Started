@@ -82,7 +82,7 @@ Empezamos por decir “size( 250, 250 );”size es una función que se usa para 
 Lo invito a que proceda a cambiar el código, añadiendo otros números en fill(); o background(); . Experimentar es una muy buena forma de saber como funcionan las cosas.
 Una introducción mas exhaustiva se puede obtener de este link. [como empezar]( http://hello.processing.org/)
 
-Finalmente, para finalizar con nuestro ejercicio de introducción: realizaremos un pequeño y simple programa para que el circulo siga la posición de cursor.
+Ahora, para finalizar esta parte de entrada con nuestro ejercicio de introducción: realizaremos un pequeño y simple programa para que el circulo siga la posición de cursor.
 
 ```
 //  método de inicialización
