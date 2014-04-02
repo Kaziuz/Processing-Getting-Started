@@ -8,4 +8,4 @@ El sistema de coordenadas de Processing funciona parecido a un plano cartesiano,
 Processing solamente trabaja con el sistema 4,  inferior derecha.
 En nuestro plano, la coordenada ( 0,0 ) donde la margen superior izquierda es nuestro punto 0. ( X, Y ) <=> ( 0, 0 ).
 
-![Coordenas y ubicación](https://github.com/Kaziuz/Processing-Getting-Started/blob/master/imagenes/coordenadasProcessingXYZ.jpg)
+![Coordenas y ubicación](https://raw.githubusercontent.com/Kaziuz/Processing-Getting-Started/master/imagenes/coordenadasProcessingXYZ.jpg)
