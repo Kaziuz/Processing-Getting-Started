@@ -12,7 +12,7 @@ __Processing__ también permite que los computadores puedan crear imágenes por 
 
 ![Generativo](http://www.ubicuostudio.com/wp-content/uploads/2012/09/Captura-de-pantalla-2012-09-07-a-las-16.38.50.png)
 
-Finalmente, __Processing__ es una gran herramienta para procesar y visualizar datos en tiempo real. Los datos son cualquier información que se puede representar numericamente y que esta en constante cambio. Las unidades de medida, el clima o los votos en tiempo de elecciones son ejemplos de datos. En la música, las notas también se pueden representar como datos por medio del protocolo MIDI, normalmente usado para comunicar diversos aparatos musicales entre si. En el campo visual, el MIDI también es usado como herramienta de visualización para conciertos en vivo, reemplazando las luces por sistemas inteligentes sincronizados en tiempo real junto con la música.
+Otro aspecto importante de  __Processing__ es su capacidad para procesar y visualizar datos en tiempo real. Entendemos los  datos como cualquier información que se puede representar numéricamente y que esta en constante cambio. Las unidades de medida, el clima o los votos en tiempo de elecciones son ejemplos de datos. En la música, las notas también se pueden representar como datos por medio del protocolo MIDI, normalmente usado para comunicar diversos aparatos musicales entre sí. En el campo visual, los datos MIDI también son usado como herramienta de visualización para conciertos en vivo, haciendo de las luces, sistemas inteligentes que se sincronizan  con la música en tiempo real.
 Tenemos como referente a __Etienne de Crécy__ y __1024__ que a mi parecer son los mas innovadores en este asunto de las sincronización de imagen en tiempo real. [link](https://www.youtube.com/watch?v=vXE2x3y51Fk)
 
 ![visualización](http://audiovisualacademy.com/blog/wp-content/uploads/2012/11/alva-noto-live.jpg)
@@ -50,7 +50,7 @@ Otra solución mas detallada seria:
 11.	Ponte la camisa
 12.	Ponte el pantalón.
 
-Hay ocasiones en que, incluso, debemos ser mas explícitos y  descriptivos. Programar una computadora es, sencillamente, describir los pasos necesarios para resolver un problema. Por consiguiente, para dibujar imagenes y realizar animaciones,  podríamos usar pasos similares a los que se suelen realizar al hacer, por ejemplo, cálculos complejos y análisis estadísticos. 
+Hay ocasiones en que, incluso, debemos ser mas explícitos y  descriptivos. Programar una computadora es, sencillamente, describir los pasos necesarios para resolver un problema. Por consiguiente, para dibujar imágenes y realizar animaciones,  podríamos usar pasos similares a los que se suelen realizar al hacer, por ejemplo, cálculos complejos y análisis estadísticos. 
 
 Este es el punto fuerte de __Processing__, ya que al tratarse de un lenguaje de programación, todos nuestros dibujos pueden ser interactivos: esto quiere decir que esos gráficos en pantalla pueden reaccionar al teclado, al presionar el ratón y con ayuda de cámaras; podemos hacer seguimiento de colores o reconocimiento de rostros. Esa es la gran diferencia de dibujar con un papel y usar una computadora. __Processing__ puede hacer que simples esbozos se conviertan en “dibujos inteligentes”, ya que esos gráficos pueden tomar decisiones o quizás puedan reaccionar a algo si así lo queremos. En definitiva, cuando estamos dibujando por medio de código podemos hacer la semejanza de que estamos creando un universo por medio de un lenguaje escrito.
 
@@ -79,7 +79,7 @@ Expliquemos mas detalladamente el programa anterior.
 
 Empezamos por decir “size( 250, 250 );”size es una función que se usa para inicializar el tamaño de nuestra hoja de dibujo, en este caso tenemos una hoja de 250 pixeles de ancho por 250 pixeles de alto. Seguidamente, tenemos “background( 0 );”, esta función se usa para dar un color de fondo a nuestra pantalla, que en este caso es negro. Después tenemos otra función que dicta “fill( 255, 0, 0);” la cual se usa para pintar el relleno de las figuras, que en este caso se usa para pintar un circulo de color rojo. Y finalmente dibujamos nuestro circulo, tenemos “ellipse( width/2, height/2, 60, 60);” con esa oración el programa entiende: dibújame un circulo en la posición del eje X en el centro de la pantalla y en la posición Y den el dentro de la pantalla, además; quiero que ese circulo tenga 60 pixeles de ancho y 60 pixeles de alto.
 
-Te invito a que procedas a cambiar el código, añadiendo otros números en fill(); o background(); . Experimentar es una muy buena forma de saber como funcionan las cosas.
+Lo invito a que proceda a cambiar el código, añadiendo otros números en fill(); o background(); . Experimentar es una muy buena forma de saber como funcionan las cosas.
 Una introducción mas exhaustiva se puede obtener de este link. [como empezar]( http://hello.processing.org/)
 
 Finalmente, para finalizar con nuestro ejercicio de introducción: realizaremos un pequeño y simple programa para que el circulo siga la posición de cursor.
