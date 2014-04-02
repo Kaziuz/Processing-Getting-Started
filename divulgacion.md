@@ -322,7 +322,7 @@ float miRuido_2(float value)
   return rev;
 }
 ```
-finalmente la figura podría evolucionar en esta forma:
+Nuestra la figura podría evolucionar en esta forma:
 
 ![Arte Generativo](imagenes/unmundocomplicado.png)
 
