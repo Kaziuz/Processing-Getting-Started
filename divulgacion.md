@@ -4,7 +4,7 @@ __Processing__ es un programa que permite hacer imágenes interactivas, visualiz
 
 ## Introducción. 
 
-Las imágenes en cuadros, historietas o las fotos de las revistas, representan momentos estáticos o memorias de quien realiza la imagen. __Processing__ es un software que permite transformar imágenes quietas en gráficos interactivos, ya que estos pueden reaccionar a diversos factores externos, como por ejemplo al pulsar una tecla del computador, mover el mouse o detectar un sonido.__Delicate BounDaries__ de __chris sugrue__ [link](https://vimeo.com/1007230), es una instalación interactiva donde se proyecta en una pantalla un ecosistema donde viven bichos,cuando la persona toca esa pantalla, los bichos salen de su hábitat para incorporarse en el cuerpo del usuario.
+Las imágenes en cuadros, historietas o las fotos de las revistas, representan momentos estáticos o memorias de quien realiza la imagen. __Processing__ es un software que permite transformar imágenes quietas en gráficos interactivos, ya que estos pueden reaccionar a diversos factores externos, como por ejemplo al pulsar una tecla del computador, mover el mouse o detectar un sonido.__Delicate BounDaries__ de __Chris Sugrue__ [link](https://vimeo.com/1007230), es una instalación interactiva donde se proyecta en una pantalla un ecosistema donde viven bichos, cuando la persona toca esa pantalla, los bichos salen de su hábitat para incorporarse en el cuerpo del usuario.
 
 ![Interactivo](http://art-science.univ-paris1.fr/docannexe/image/584/img-3.jpg)
 
@@ -13,7 +13,7 @@ __Processing__ también permite que los computadores puedan crear imágenes por 
 ![Generativo](http://www.ubicuostudio.com/wp-content/uploads/2012/09/Captura-de-pantalla-2012-09-07-a-las-16.38.50.png)
 
 Otro aspecto importante de  __Processing__ es su capacidad para procesar y visualizar datos en tiempo real. Entendemos los  datos como cualquier información que se puede representar numéricamente y que esta en constante cambio. Las unidades de medida, el clima o los votos en tiempo de elecciones son ejemplos de datos. En la música, las notas también se pueden representar como datos por medio del protocolo MIDI, normalmente usado para comunicar diversos aparatos musicales entre sí. En el campo visual, los datos MIDI también son usado como herramienta de visualización para conciertos en vivo, haciendo de las luces, sistemas inteligentes que se sincronizan  con la música en tiempo real.
-Tenemos como referente a __Etienne de Crécy__ y __1024__ que a mi parecer son los mas innovadores en este asunto de las sincronización de imagen en tiempo real. [link](https://www.youtube.com/watch?v=vXE2x3y51Fk)
+Tenemos como referente a __Etienne de Crécy__ y __1024__ los cuales se destacan en el ámbito de las sincronización de imagen en tiempo real. [link](https://www.youtube.com/watch?v=vXE2x3y51Fk)
 
 ![visualización](http://audiovisualacademy.com/blog/wp-content/uploads/2012/11/alva-noto-live.jpg)
 
@@ -73,7 +73,7 @@ fill(255, 0, 0);                    // Color del circulo
 ellipse(width/2, height/2, 60, 60); // pintamos un circulo en la pantalla
 ```
 
-Después de escribir o copiar este pequeño código en __processing__, presionamos start para que el programa traduzca esas oraciones en una imagen. Podemos ver un circulo en la mitad de la pantalla, un fondo negro y el circulo pintado de rojo.
+Después de escribir o copiar este pequeño código en __Processing__, presionamos start para que el programa traduzca esas oraciones en una imagen. Podemos ver un circulo en la mitad de la pantalla, un fondo negro y el circulo pintado de rojo.
 
 Expliquemos mas detalladamente el programa anterior.
 
@@ -146,13 +146,21 @@ void draw()
   angle ++;  // incrementamos el circulo sumándole 1 infinitamente
   float rad = radians(angle); 
   
-  //  Creamos una variable llamada rad, la cual se incrementara toma el incremento   de angle y lo convierte    //  en radianes.
+  /*  Creamos una variable llamada rad, la cual se incrementara toma el incremento
+      de angle y lo convierte en radianes.
+  */
 
-  //  Creamos una variable llamada x, y le asignamos el valor almacenado en centerx, a este le sumamos el       //  valor almacenado en radius y lo multiplicamos por el coseno de la variable rad
+  /*  Creamos una variable llamada x, y le asignamos el valor almacenado en centerx, a 
+      este le sumamos el valor almacenado en radius y lo multiplicamos por el 
+      coseno de la variable rad
+  */
   
   float x = centerx + (radius * cos(rad));  
 
-  //  Creamos una variable llamada y, y le asignamos el valor almacenado en centery, a este le sumamos el       //  valor almacenado en radius y lo multiplicamos por el seno de la variable rad
+  /*  Creamos una variable llamada y, y le asignamos el valor almacenado en centery,
+      a este le sumamos el valor almacenado en radius y lo multiplicamos por el seno
+      de la variable rad
+  /*
 
   float y = centery + (radius * sin(rad)); 
   stroke(20, 50, 70);
@@ -198,15 +206,18 @@ void setup ()
   // realizamos un loop desde 0 hasta 360 grados en incrementos de 1
   for (float ang=0;ang<=360;ang+=1) 
 {
-
     // valores de random en el start point
     noiseval += 0.1; //  incrementamos la variable noiseval en valores de 0.1
 
-   // a la variable radVariance le asignamos la función customNoise con el parámetro noiseval, el cual se esta    // incrementado y lo multiplicamos por 30.
+    /* a la variable radVariance le asignamos la función customNoise con el parámetro noiseval,
+       el cual se esta incrementado y lo multiplicamos por 30.
+    */
+    
     radVariance = 30 * customNoise(noiseval);
 
-   //  con esta variable, el dibujo en Processing no dibujo un circulo perfecto, sino que ç
-   //  realiza pequeños cambios para realizar petalos.
+    /*  con esta variable, el dibujo en Processing no dibujo un circulo perfecto, sino que 
+        realiza pequeños cambios para realizar pétalos.
+    */
    
     thisRadius = radius + radVariance; 
     rad = radians(ang);
@@ -217,7 +228,7 @@ void setup ()
   endShape();
 }
 
-   //  función personalizada para realizar el cambio de periodicidad del punto de dibujo
+//  función personalizada para realizar el cambio de periodicidad del punto de dibujo
 float customNoise(float value) 
 { 
   float retValue = pow(sin(value), 3); 
@@ -227,7 +238,7 @@ float customNoise(float value)
 
 Siempre que ejecutamos el código, por decirlo de alguna manera; los pétalos no nacen en el mismo lugar, siempre giran en sentido horario de las agujas del reloj, permitiendo que siempre sea diferente de la anterior.
 
-Por ultimo observaremos otro ejemplo para observar la evolución de una imagen en __processing__, a esta imagen le añadiremos algo aprendido en ejercicios anteriores, pues la figura se generar siempre y cuando presionemos cualquier tecla de nuestra computadora, lo cual añadirá a nuestra imagen una forma de interactividad muy simple:
+Por ultimo observaremos otro ejemplo para observar la evolución de una imagen en __Processing__, a esta imagen le añadiremos algo aprendido en ejercicios anteriores, pues la figura se generar siempre y cuando presionemos cualquier tecla de nuestra computadora, lo cual añadirá a nuestra imagen una forma de interactividad muy simple:
 
 ```
 //  Johnny Sepúlveda
@@ -264,7 +275,7 @@ void draw()
 
   if ( angulo > 360) angulo = -360;
 
-  //  Devemos presionar alguna tecla de nuestro computador para que la figura pueda evolucionar
+  //  Debemos presionar alguna tecla de nuestro computador para que la figura pueda evolucionar
   if (keyPressed == true)
   {
     float rad_1 = radians(angulo);
@@ -285,7 +296,7 @@ void draw()
     line(x1, y1, x2, y2);
   }
 
-  //  Con estas asignaciones, estamos diciendole al programa que el punto actual es igual al punto anterior.
+  //  Con estas asignaciones, estamos diciéndole al programa que el punto actual es igual al punto anterior.
   lastx_1 = x1;
   lasty_1 = y1;
   lastx_2 = x2;
@@ -408,15 +419,16 @@ El pitch es la nota que hemos presionado en nuestro controlador MIDI. Entonces p
 
 Mira este código:
 ```
-//  importamos la libreria MIDIBUS
+//  importamos la librería MIDIBUS
 import themidibus.*;
 
-// Instanciamos la libreria, esto es necesario para poder usar la libreria en nuestro codigo.
+// Instanciamos la librería, esto es necesario para poder usar la librería en nuestro codigo.
 MidiBus myBus; 
 
 void setup()
 {
   size(500, 500);
+  
   //  Hace una lista de todos los dispositivos MIDi conectados al computador
   MidiBus.list();
 
@@ -431,11 +443,17 @@ void draw()
 
 }
 
-//  Este metodo tiene 3 parametros, 1 canal MIDI, 2 la nota presionada y el tercero es la dinamica,
-//  ademas de indicar cuando presionamos una tecla o un pad de nuestro controlador MIDI.
+/*  Este método tiene 3 parámetros, 1 canal MIDI, 2 la nota presionada y 
+    el tercero es la dinámica,
+    además de indicar cuando presionamos una tecla o un pad de nuestro controlador MIDI.
+*/
+
 void noteOn(int channel, int pit, int vel)
 {
-  //  Este println nos sirve para monitorizar lo que esta pasando con nuestro codigo y el controlador midi.
+  /*  Este println nos sirve para monitorizar lo que esta pasando con nuestro 
+      código y el controlador midi.
+  */
+  
   println("\tEstadoNota : Nota=" + pit + "\tVelocity=" + vel + "\tCanalMidi=" + channel); 
   
   //  Si presiono el pad que genera la nota 0 saldra un circulo en la pantalla.
@@ -448,7 +466,7 @@ void noteOn(int channel, int pit, int vel)
     ellipse(width/2, height/2, 400, 400);
   }
   
-  //  Si presiono el pad que genera la nota 1 saldra un rectangulo en la pantalla.
+  //  Si presiono el pad que genera la nota 1 saldrá un rectángulo en la pantalla.
   if (pit == 1)
   {
     noFill();
@@ -458,7 +476,7 @@ void noteOn(int channel, int pit, int vel)
     rect(120, 100, 380, 400);
   }
   
-  //  Si presiono el pad que genera la nota 2 saldra un rectangulo en la pantalla pintado de color rojo.
+  //  Si presiono el pad que genera la nota 2 saldrá un rectángulo en la pantalla pintado de color rojo.
   if (pit == 2)
   {
     fill(255, 0, 0);
@@ -470,8 +488,10 @@ void noteOn(int channel, int pit, int vel)
   
 }
 
-//  Este metodo tiene 3 parametros, 1 canal MIDI, 2 la nota presionada y el tercero es la dinamica,
-//  ademas de indicar cuando soltamos una tecla o un pad de nuestro controlador MIDI.
+/*  Este método tiene 3 parámetros, 1 canal MIDI, 2 la nota presionada 
+    y el tercero es la dinámica, además de indicar cuando soltamos una tecla o un
+    pad de nuestro controlador MIDI.
+*/
 
 void noteOff(int channel, int pit, int vel)
 {
@@ -489,8 +509,7 @@ void noteOff(int channel, int pit, int vel)
 }
 ````
 
-Finalmente podemos ver una aplicación en vivo de este tipo de sistemas, ruteando la salida MIDI de un programa como Ableton Live a Processing. [link]( https://www.youtube.com/watch?v=duh7buY594E)
-
+Ahora podemos ver una aplicación en vivo de este tipo de sistemas, ruteando la salida MIDI de un programa como Ableton Live a Processing. [link]( https://www.youtube.com/watch?v=duh7buY594E)
 
 Como observamos, __Processing__  puede ser una excelente herramienta de creación visual, puede hacernos nuestra imaginación volar porque podemos crear desde cero cualquier imagen, inclusive podemos dotarlo de cierta inteligencia para que el solito pueda tomar sus propias decisiones y  elegir al azar que método escoge para evolucionar, y finalmente crear un espectacular set  de visuales en tiempo real.
 
