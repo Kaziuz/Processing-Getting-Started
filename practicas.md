@@ -1,10 +1,10 @@
 ## Practicas.
 
-0. Fijar una tamaño de pantalla                     [solución](solución1.pde)
+0. Fijar una tamaño de pantalla                     [solución](codigo de practicas/solucion1.md)
 
-1. Entender el sistema de coordenadas de processing [solución](solución2.md)
+1. Entender el sistema de coordenadas de processing [solución](codigo de practicas/solucion2.pde)
 
-2. Dibujar una línea                                [solución](solución3.pde)
+2. Dibujar una línea                                [solución](codigo de practicas/solucion3.pde)
 
 3. Dibujar un cuadrado                              [solución](solución4.pde)
 
