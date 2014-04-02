@@ -6,13 +6,13 @@
 
 2. Dibujar una línea                                [solución](codigo de practicas/solucion3.pde)
 
-3. Dibujar un cuadrado                              [solución](solución4.pde)
+3. Dibujar un cuadrado                              [solución](codigo de practicas/solucion4.pde)
 
-4. Dibujar un circulo                               [solución](solución5.pde)
+4. Dibujar un circulo                               [solución](codigo de practicas/solucion5.pde)
 
-5. Cambiar el color de fondo del circulo            [solución](solución6.pde)
+5. Cambiar el color de fondo del circulo            [solución](codigo de practicas/solucion6.pde)
 
-6. Cambiar el color de borde del circulo            [solución](solución7.pde)
+6. Cambiar el color de borde del circulo            [solución](codigo de practicas/solucion7.pde)
 
 7. Remover el color del fondo del circulo           [solución](solución8.md)
 
