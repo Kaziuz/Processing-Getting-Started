@@ -6,16 +6,16 @@ __Processing__ es un programa que permite hacer imágenes interactivas, visualiz
 
 Las imágenes en cuadros, historietas o las fotos de las revistas, representan momentos estáticos o memorias de quien realiza la imagen. __Processing__ es un software que permite transformar imágenes quietas en gráficos interactivos, ya que estos pueden reaccionar a diversos factores externos, como por ejemplo al pulsar una tecla del computador, mover el mouse o detectar un sonido.__Delicate BounDaries__ de __chris sugrue__ [link](https://vimeo.com/1007230), es una instalación interactiva donde se proyecta en una pantalla un ecosistema donde viven bichos,cuando la persona toca esa pantalla, los bichos salen de su hábitat para incorporarse en el cuerpo del usuario.
 
-[Interactivo](http://art-science.univ-paris1.fr/docannexe/image/584/img-3.jpg)
+![Interactivo](http://art-science.univ-paris1.fr/docannexe/image/584/img-3.jpg)
 
 __Processing__ también permite que los computadores puedan crear imágenes por medio de formulas matemáticas,  este proceso puede generar imágenes que son alusivas a la naturaleza como por ejemplo arboles, plantas y flores. __György Kepes__ es un artista que usa los procesos del arte generativo para crear imágenes que evolucionan en tiempo real. [link](http://butdoesitfloat.com/The-line-that-describes-the-beautiful-is-elliptical-It-has-simplicity)
 
-[Generativo](http://www.ubicuostudio.com/wp-content/uploads/2012/09/Captura-de-pantalla-2012-09-07-a-las-16.38.50.png)
+![Generativo](http://www.ubicuostudio.com/wp-content/uploads/2012/09/Captura-de-pantalla-2012-09-07-a-las-16.38.50.png)
 
 Finalmente, __Processing__ es una gran herramienta para procesar y visualizar datos en tiempo real. Los datos son cualquier información que se puede representar numericamente y que esta en constante cambio. Las unidades de medida, el clima o los votos en tiempo de elecciones son ejemplos de datos. En la música, las notas también se pueden representar como datos por medio del protocolo MIDI, normalmente usado para comunicar diversos aparatos musicales entre si. En el campo visual, el MIDI también es usado como herramienta de visualización para conciertos en vivo, reemplazando las luces por sistemas inteligentes sincronizados en tiempo real junto con la música.
 Tenemos como referente a __Etienne de Crécy__ y __1024__ que a mi parecer son los mas innovadores en este asunto de las sincronización de imagen en tiempo real. [link](https://www.youtube.com/watch?v=vXE2x3y51Fk)
 
-[visualización](http://audiovisualacademy.com/blog/wp-content/uploads/2012/11/alva-noto-live.jpg)
+![visualización](http://audiovisualacademy.com/blog/wp-content/uploads/2012/11/alva-noto-live.jpg)
 
 ## Descripción y practicas.
 
@@ -62,7 +62,7 @@ La interfaz de __Processing__ esta compuesta por una serie de botones en la part
 
 Debajo, podemos mirar una gran zona blanca; llamada también editor de texto. Esta es la zona mas importante, ya que aquí será donde escribiremos nuestras oraciones o líneas de código.  
 
-![Lienzo](imagenes/imagen6)
+![Interfaz](http://people.cs.pitt.edu/~jwenskovitch/images/processing/interface.png)
 
 Empecemos por escribir esto:
 
@@ -100,6 +100,9 @@ void draw()
  //  mouseX y mouseY se usan para obtener las coordenadas de la posición del cursor
 }
 ```
+
+![seguir el mouse](imagenes/imagen7.png)
+
 Ahora podemos dotar un programa de __Processing__ de algún tipo de inteligencia para que el pueda dibujar por si solo, nosotros solo nos preocuparemos de darle al programa las herramientas y parámetros de cómo dibujar.
 
 Empezamos por decir que las cosas construidas por el hombre siempre son edificaciones no muy complejas, lo mas importante es que sean solidas y resistentes con el pasar del tiempo, esto en detalles técnicos. Pero un punto importante y un tanto espiritual es que las construcciones del hombre siempre se fijan de afuera hacia adentro. En una casa,  por ejemplo, se empieza por fijar las bases, luego las columnas, después los muros y así sucesivamente, siguiendo rigurosamente unos estándares para que esta edificación no decaiga.
