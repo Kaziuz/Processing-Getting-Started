@@ -1,5 +1,3 @@
-//  Iniciamos el codigo inicializando las variables globales
-
 float radius = 100; //  radio de nuestra forma
 int centX = 250;    //  centro en el eje X
 int centY = 150;    //  centro en el eje Y
@@ -50,4 +48,11 @@ void setup ()
     curveVertex(x, y);
   }
   endShape();
+}
+
+//  función personalizada para realizar el cambio de periodicidad del punto de dibujo
+float customNoise(float value) 
+{ 
+  float retValue = pow(sin(value), 3); 
+  return retValue;
 }
