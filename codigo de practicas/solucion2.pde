@@ -1,4 +1,3 @@
-```
 /*  Teniendo claro como funciona el sistema de coordenadas, debemos usar la función line( x1, y1, x2, y2);
     Line recibe 4 parámetros: un punto en X y otro en Y inicial. Luego debemos escribir otro punto en x y
     otro en y final.
@@ -15,4 +14,4 @@
     La anterior función dibujara una línea que tiene de partida el punto de origen con 
     coordenadas finales  en x = 70 y Y = 80;
 */
-```
+
