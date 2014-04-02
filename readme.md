@@ -5,7 +5,7 @@ Aquí podrás acceder a un material libre, donde encontraras una guia para apren
 
 ![Processing](http://diariowm.files.wordpress.com/2013/07/processing2.jpg)
 
-# por donde quieres empezar ?
+# ¿ Por donde iniciar  ?
 
 [Introducción por Daniel Shiffman en video]( http://hello.processing.org/)
 
@@ -18,11 +18,13 @@ rutinas diarias de estudio
 
 [MIRA EL CÓDIGO DE OTROS](http://www.openprocessing.org/)
 
-[A QUIENES SEGUIR](aquienesseguir.md)
+[A QUIENES SEGUIR <-> GENTE Y MOVIMIENTO EN TORNO AL ARTE DIGITAL](aquienesseguir.md)
 
 [TUTORIALES EN VIDEO](https://www.youtube.com/playlist?list=PL19223D55BA16ECDF)
 
 [DOCUMENTAL PROCESSING SUBTITULADO](https://vimeo.com/61191770)
+
+[DUDAS Y SOLUCIONES SOBRE PROCESSING](http://forum.processing.org/two/)
 
 ---
 INICIAR CON:
