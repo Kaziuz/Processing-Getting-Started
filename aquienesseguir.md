@@ -1,28 +1,27 @@
-
 # Gente en Twitter
 
-@miguel_v_espada 
-@iragreenberg
-@ProcessingTips
-@processingsp
-@P5Van
-@creativecoding
-@p5Toronto
-@P5Rennes
-@ProcessingCHI
-@processing_org
-@p5berlin
-@medialabprado
-@HangarBCN
-@P5Lyon
-@P5_Rosario
-@Gnomalab
-@openprocessing
-@kcimc
-@ProcessingOrg
-@processingjs
-@ben_fry => Co-realizador del software
-@golan
-@shiffman
-@zachlieberman
+1.  @miguel_v_espada 
+2.  @iragreenberg
+3.  @ProcessingTips
+4.  @processingsp
+5.  @P5Van
+6.  @creativecoding
+7.  @p5Toronto
+8.  @P5Rennes
+9.  @ProcessingCHI
+10. @processing_org
+11. @p5berlin
+12. @medialabprado
+13. @HangarBCN
+14. @P5Lyon
+15. @P5_Rosario
+16. @Gnomalab
+17. @openprocessing
+18. @kcimc
+19. @ProcessingOrg
+20. @processingjs
+21. @ben_fry => Co-realizador del software
+22. @golan
+23. @shiffman
+24. @zachlieberman
 
