@@ -7,6 +7,7 @@ Aquí podrás acceder a un material libre, donde encontraras una guia para apren
 
 # por donde quieres empezar ?
 
+---
 ## fortalezas
 
 rutinas diarias de estudio
@@ -21,16 +22,8 @@ rutinas diarias de estudio
 
 [DOCUMENTAL PROCESSING SUBTITULADO](https://vimeo.com/61191770)
 
-============================================================================================================
-
+---
 INICIAR CON:
-
-
-
-
-
-
-
 
 [PROFUNDIZACIÓN - Guía de inicio para ser un samurái en processing](PROFUNDIZACION.md)
 
