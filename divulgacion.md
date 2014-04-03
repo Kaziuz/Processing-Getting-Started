@@ -6,7 +6,7 @@ __Processing__ es un programa que permite hacer imágenes interactivas, visualiz
 
 Las imágenes en cuadros, historietas o las fotos de las revistas, representan momentos estáticos o memorias de quien realiza la imagen. __Processing__ es un software que permite transformar imágenes quietas en gráficos interactivos, ya que estos pueden reaccionar a diversos factores externos, como por ejemplo al pulsar una tecla del computador, mover el mouse o detectar un sonido.__Delicate BounDaries__ de __Chris Sugrue__ [link](https://vimeo.com/1007230), es una instalación interactiva donde se proyecta en una pantalla un ecosistema donde viven bichos, cuando la persona toca esa pantalla, los bichos salen de su hábitat para incorporarse en el cuerpo del usuario.
 
-![Interactivo](http://art-science.univ-paris1.fr/docannexe/image/584/img-3.jpg)
+<img src = "http://art-science.univ-paris1.fr/docannexe/image/584/img-3.jpg" width = "340" height="420" >
 
 __Processing__ también permite que los computadores puedan crear imágenes por medio de formulas matemáticas,  este proceso puede generar imágenes que son alusivas a la naturaleza como por ejemplo arboles, plantas y flores. __György Kepes__ es un artista que usa los procesos del arte generativo para crear imágenes que evolucionan en tiempo real. [link](http://butdoesitfloat.com/The-line-that-describes-the-beautiful-is-elliptical-It-has-simplicity)
 
@@ -16,7 +16,7 @@ __Processing__ también permite que los computadores puedan crear imágenes por 
 Otro aspecto importante de  __Processing__ es su capacidad para procesar y visualizar datos en tiempo real. Entendemos los  datos como cualquier información que se puede representar numéricamente y que esta en constante cambio. Las unidades de medida, el clima o los votos en tiempo de elecciones son ejemplos de datos. En la música, las notas también se pueden representar como datos por medio del protocolo MIDI, normalmente usado para comunicar diversos aparatos musicales entre sí. En el campo visual, los datos MIDI también tienen un uso creativo como herramienta de visualización para conciertos en vivo, reemplazando las luces, por sistemas inteligentes que se sincronizan  con la música en tiempo real.
 Tenemos como referente a __Etienne de Crécy__ y __1024__ los cuales se destacan en el ámbito de las sincronización de imagen en tiempo real. [link](https://www.youtube.com/watch?v=vXE2x3y51Fk)
 
-![visualización](http://audiovisualacademy.com/blog/wp-content/uploads/2012/11/alva-noto-live.jpg)
+<img src = "http://audiovisualacademy.com/blog/wp-content/uploads/2012/11/alva-noto-live.jpg" width="360" height="240">
 
 ## Descripción y practicas.
 
@@ -63,7 +63,7 @@ La interfaz de __Processing__ esta compuesta por una serie de botones en la part
 
 Debajo, podemos mirar una gran zona blanca; llamada también editor de texto. Esta es la zona mas importante, ya que aquí será donde escribiremos nuestras oraciones o líneas de código.  
 
-![Interfaz](http://people.cs.pitt.edu/~jwenskovitch/images/processing/interface.png)
+<img src = "http://people.cs.pitt.edu/~jwenskovitch/images/processing/interface.png" width="320" height="240">
 
 Empecemos por escribir esto:
 
@@ -325,7 +325,7 @@ float miRuido_2(float value)
 ```
 Nuestra la figura podría evolucionar en esta forma:
 
-![Arte Generativo](imagenes/unmundocomplicado.png)
+<img src = "imagenes/unmundocomplicado.png" width="480" height="220">
 
 Finalmente, nuestra ultima practica será tomar los datos generados por un controlador MIDI, y realizar una visualización de estos datos. Por ejemplo, si presionamos DO entonces __Processing__ debe dibujar un circulo, si presionamos RE entonces __Processing__ debe dibujar un triangulo y así sucesivamente.
 
