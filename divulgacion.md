@@ -10,7 +10,8 @@ Las imágenes en cuadros, historietas o las fotos de las revistas, representan m
 
 __Processing__ también permite que los computadores puedan crear imágenes por medio de formulas matemáticas,  este proceso puede generar imágenes que son alusivas a la naturaleza como por ejemplo arboles, plantas y flores. __György Kepes__ es un artista que usa los procesos del arte generativo para crear imágenes que evolucionan en tiempo real. [link](http://butdoesitfloat.com/The-line-that-describes-the-beautiful-is-elliptical-It-has-simplicity)
 
-![Generativo](http://www.ubicuostudio.com/wp-content/uploads/2012/09/Captura-de-pantalla-2012-09-07-a-las-16.38.50.png)
+
+<img src = "http://www.ubicuostudio.com/wp-content/uploads/2012/09/Captura-de-pantalla-2012-09-07-a-las-16.38.50.png" width ="420" height="340" alt="Generativo">
 
 Otro aspecto importante de  __Processing__ es su capacidad para procesar y visualizar datos en tiempo real. Entendemos los  datos como cualquier información que se puede representar numéricamente y que esta en constante cambio. Las unidades de medida, el clima o los votos en tiempo de elecciones son ejemplos de datos. En la música, las notas también se pueden representar como datos por medio del protocolo MIDI, normalmente usado para comunicar diversos aparatos musicales entre sí. En el campo visual, los datos MIDI también tienen un uso creativo como herramienta de visualización para conciertos en vivo, reemplazando las luces, por sistemas inteligentes que se sincronizan  con la música en tiempo real.
 Tenemos como referente a __Etienne de Crécy__ y __1024__ los cuales se destacan en el ámbito de las sincronización de imagen en tiempo real. [link](https://www.youtube.com/watch?v=vXE2x3y51Fk)
