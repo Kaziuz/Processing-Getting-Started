@@ -16,7 +16,7 @@ __Processing__ también permite que los computadores puedan crear imágenes por 
 Otro aspecto importante de  __Processing__ es su capacidad para procesar y visualizar datos en tiempo real. Entendemos los  datos como cualquier información que se puede representar numéricamente y que esta en constante cambio. Las unidades de medida, el clima o los votos en tiempo de elecciones son ejemplos de datos. En la música, las notas también se pueden representar como datos por medio del protocolo MIDI, normalmente usado para comunicar diversos aparatos musicales entre sí. En el campo visual, los datos MIDI también tienen un uso creativo como herramienta de visualización para conciertos en vivo, reemplazando las luces, por sistemas inteligentes que se sincronizan  con la música en tiempo real.
 Tenemos como referente a __Etienne de Crécy__ y __1024__ los cuales se destacan en el ámbito de las sincronización de imagen en tiempo real. [link](https://www.youtube.com/watch?v=vXE2x3y51Fk)
 
-<img src = "http://audiovisualacademy.com/blog/wp-content/uploads/2012/11/alva-noto-live.jpg" width="360" height="240">
+<img src = "http://audiovisualacademy.com/blog/wp-content/uploads/2012/11/alva-noto-live.jpg" width="460" height="240">
 
 ## Descripción y practicas.
 
@@ -63,16 +63,20 @@ La interfaz de __Processing__ esta compuesta por una serie de botones en la part
 
 Debajo, podemos mirar una gran zona blanca; llamada también editor de texto. Esta es la zona mas importante, ya que aquí será donde escribiremos nuestras oraciones o líneas de código.  
 
-<img src = "http://people.cs.pitt.edu/~jwenskovitch/images/processing/interface.png" width="320" height="240">
+<img src = "http://people.cs.pitt.edu/~jwenskovitch/images/processing/interface.png" width="420" height="320">
 
 Empecemos por escribir esto:
+
+[descarga el código](codigoDivulgacion/codigo1/codigo1.pde)
 
 ```
 size(250, 250);                     // Tamaño de nuestra hoja de dibujo
 background(0);                      // Color de la hoja
 fill(255, 0, 0);                    // Color del circulo
+noStroke();                         // Sin contorno
 ellipse(width/2, height/2, 60, 60); // pintamos un circulo en la pantalla
 ```
+![Imagen](imagenes/imagenDivulgacion1.jpg)
 
 Después de escribir o copiar este pequeño código en __Processing__, presionamos start para que el programa traduzca esas oraciones en una imagen. Podemos ver un circulo en la mitad de la pantalla, un fondo negro y el circulo pintado de rojo.
 
@@ -84,6 +88,8 @@ Lo invito a que proceda a cambiar el código, añadiendo otros números en fill(
 Una introducción mas exhaustiva se puede obtener de este link. [como empezar]( http://hello.processing.org/)
 
 Ahora, para finalizar esta parte de entrada con nuestro ejercicio de introducción: realizaremos un pequeño y simple programa para que el circulo siga la posición de cursor.
+
+[Descarga el código](codigoDivulgacion/codigo2/codigo2.pde)
 
 ```
 //  método de inicialización
@@ -102,15 +108,17 @@ void draw()
 }
 ```
 
-![seguir el mouse](imagenes/imagen7.png)
+![seguir el mouse](imagenes/imagenejemplo2Divulgacion.jpg)
 
-Ahora podemos dotar un programa de __Processing__ de algún tipo de inteligencia para que el pueda dibujar por si solo, nosotros solo nos preocuparemos de darle al programa las herramientas y parámetros de cómo dibujar.
+Ahora podemos asignar a un programa de __Processing__ con algún tipo de inteligencia para que el pueda dibujar por si solo, nosotros solo nos preocuparemos de darle al programa las herramientas y parámetros de cómo dibujar.
 
-Empezamos por decir que las cosas construidas por el hombre siempre son edificaciones no muy complejas, lo mas importante es que sean solidas y resistentes con el pasar del tiempo, esto en detalles técnicos. Pero un punto importante y un tanto espiritual es que las construcciones del hombre siempre se fijan de afuera hacia adentro. En una casa,  por ejemplo, se empieza por fijar las bases, luego las columnas, después los muros y así sucesivamente, siguiendo rigurosamente unos estándares para que esta edificación no decaiga.
+Cuando se crea imágenes usando medios digitales (computadores) se pueden desarrollar nuevos métodos de creación, entre los mas interesantes están los procesos generativos.
 
-Particularmente, la evolución humana y de la naturaleza no funciona de este modo. Se trata de un proceso de errores de millones de años, donde no se crea y se construye como hace el hombre, sino que se evoluciona y se complejizan esos métodos de nacimiento. Hablo entonces aquí de adentro hacia fuera, y es de este modo como funciona la naturaleza.
+Cuando se habla de construcción generativa, se habla de un proceso donde destacan destrezas artísticas, musicales y conocimientos matemáticos a una escala simple. Normalmente se usa un computador y unas variables que cambian con el tiempo. Cuando se habla de "_parámetros que varían_", se citan cálculos para crear, por ejemplo, una imagen o un sonido combinado con eventos programados por el autor con un componente de aleatoriedad, esto quiere decir que esos eventos no los decide el artista, sino que esa decisión es tomada por el computador. Esto es diferente, por ejemplo, cuando queremos que se dibuje un circulo con tal color en tal posición.
 
-En el mundo del arte, los programas que toman una decisión sobre como evolucionar siguiendo unos parámetros son llamados generativos. Pero estos parámetros son decididos por el programa realizado en __Processing__ al azar, no son impuestos como cuando queremos que se dibuje un circulo con tal color en tal posición.
+El arte generativo se aplica a la música electronica, el arte fractal y la literatura cut-up.
+
+<img src = "http://i.stack.imgur.com/iD0xw.jpg" width="320" height="320">
 
 Empecemos por preguntarnos entonces, ¿ Que es lo que hace la función ellipse de __Processing__ ? la respuesta es simple, “pues dibujar un circulo”, eso es verdad, pero si desintegramos ese método que trae por defecto el programa, nos daremos cuenta que esconde unos métodos matemáticos para realizar el dibujo del circulo.
 
