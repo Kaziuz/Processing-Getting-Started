@@ -1,3 +1,7 @@
+    /////////////////////////////////////////////////////////////////////////////////////
+    //  Recuerda descargar este código junto con la carpeta Data para poder compilarlo //
+    /////////////////////////////////////////////////////////////////////////////////////
+
 /*  Una libreria en general, es una implementación que se le hace
     al lenguaje de programación con la finalidad de extender su funcionalidad.
     Esto hace que processing no solo sirva para hacer dibujos digitales.
