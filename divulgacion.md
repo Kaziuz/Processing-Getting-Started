@@ -188,7 +188,7 @@ De esta manera, nos entrañamos en la función ellipse() y realizamos nuestro pr
 
 Ahora tomando este punto de partida, y añadiendo algo de “random();”, podemos decirle al programa que cree una figura dentro de un estándar que es el método de dibujar un circulo que discernimos anteriormente.
 
-![Descarga el código](codigoDivulgacion/codigo4/codigo4.pde)
+[Descarga el código](codigoDivulgacion/codigo4/codigo4.pde)
 
 ```
 float radius = 100; //  radio de nuestra forma
