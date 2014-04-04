@@ -16,8 +16,8 @@
 
 7. Dibujo generativo                                [solución](codigo de practicas/solucion8.pde)
 
-8. Importando librerias                             [solución](codigo de practicas/solucion9.pde)
+8. Importando librerias                             [solución](https://github.com/Kaziuz/Processing-Getting-Started/tree/master/codigo%20de%20practicas/solucion9)
 
-9.  Testeando midi               [solución](codigo de practicas/solucion10.pde)
+9.  Testeando midi                                  [solución](codigo de practicas/solucion10.pde)
 
-10. conexion(editar)                    [solución](codigo de practicas/solucion11.pde)
+10. conexion(editar)                                [solución](codigo de practicas/solucion11.pde)
