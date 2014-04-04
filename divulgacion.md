@@ -251,7 +251,6 @@ float customNoise(float value)
 }
 
 ```
-
 ![imagen](imagenes/imagenGenerativa1.jpg)
 
 Siempre que ejecutamos el código, por decirlo de alguna manera; los pétalos no nacen en el mismo lugar, siempre giran en sentido horario de las agujas del reloj, permitiendo que siempre sea diferente de la anterior.
