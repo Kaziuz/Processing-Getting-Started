@@ -33,5 +33,6 @@ INICIAR CON:
 
 [DIVULGACIÓN - ¿Porqué y para qué processing?](divulgacion.md)
 
+[BIBLIOGRAFÍA](https://github.com/Kaziuz/Processing-Getting-Started/tree/master/bibliografia)
 
 
