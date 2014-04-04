@@ -1,4 +1,4 @@
-![cover](cover.jpg)
+![cover](http://img391.imageshack.us/img391/1999/candlestandmotozq6.jpg)
 
 
 
