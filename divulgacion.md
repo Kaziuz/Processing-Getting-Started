@@ -124,6 +124,8 @@ Empecemos por preguntarnos entonces, ¿ Que es lo que hace la función ellipse d
 
 Miremos el siguiente código:
 
+[Descarga el código](codigoDivulgacion/codigo3/codigo3.pde)
+
 ```
 // creación de circulo con funciones trigonométricas
 
@@ -154,7 +156,7 @@ void draw()
 
   angle ++;  // incrementamos el circulo sumándole 1 infinitamente
   float rad = radians(angle); 
-  
+
   /*  Creamos una variable llamada rad, la cual se incrementara toma el incremento
       de angle y lo convierte en radianes.
   */
@@ -163,13 +165,13 @@ void draw()
       este le sumamos el valor almacenado en radius y lo multiplicamos por el 
       coseno de la variable rad
   */
-  
+
   float x = centerx + (radius * cos(rad));  
 
   /*  Creamos una variable llamada y, y le asignamos el valor almacenado en centery,
       a este le sumamos el valor almacenado en radius y lo multiplicamos por el seno
       de la variable rad
-  /*
+  */
 
   float y = centery + (radius * sin(rad)); 
   stroke(20, 50, 70);
@@ -179,12 +181,16 @@ void draw()
 }
 ```
 
+![imagen](imagenes/imagendeCirculo.jpg)
+
 En el anterior código hicimos un uso de funciones trigonométricas como “sin()” y “cos()”, las cuales son métodos matemáticos para dibujar funciones periódicas.
 De esta manera, nos entrañamos en la función ellipse() y realizamos nuestro propio método de dibujado de un circulo.
 
 Ahora tomando este punto de partida, y añadiendo algo de “random();”, podemos decirle al programa que cree una figura dentro de un estándar que es el método de dibujar un circulo que discernimos anteriormente.
-```
 
+![Descarga el código](codigoDivulgacion/codigo4/codigo4.pde)
+
+```
 float radius = 100; //  radio de nuestra forma
 int centX = 250;    //  centro en el eje X
 int centY = 150;    //  centro en el eje Y
@@ -243,11 +249,16 @@ float customNoise(float value)
   float retValue = pow(sin(value), 3); 
   return retValue;
 }
+
 ```
+
+![imagen](imagenes/imagenGenerativa1.jpg)
 
 Siempre que ejecutamos el código, por decirlo de alguna manera; los pétalos no nacen en el mismo lugar, siempre giran en sentido horario de las agujas del reloj, permitiendo que siempre sea diferente de la anterior.
 
 Por ultimo observaremos otro ejemplo para observar la evolución de una imagen en __Processing__, a esta imagen le añadiremos algo aprendido en ejercicios anteriores, pues la figura se generar siempre y cuando presionemos cualquier tecla de nuestra computadora, lo cual añadirá a nuestra imagen una forma de interactividad muy simple:
+
+![Descarga el código](codigoDivulgacion/codigo5/codigo5.pde)
 
 ```
 //  Johnny Sepúlveda
@@ -331,6 +342,7 @@ float miRuido_2(float value)
   return rev;
 }
 ```
+
 Nuestra la figura podría evolucionar en esta forma:
 
 <img src = "imagenes/unmundocomplicado.png" width="480" height="220">
@@ -427,6 +439,9 @@ Velocity:127
 El pitch es la nota que hemos presionado en nuestro controlador MIDI. Entonces podemos decirle a __Processing__ que cuando tal nota sea presionada, entonces dibuje tal cosa, una elegancia !!!.
 
 Mira este código:
+
+[Descarga el código](codigoDivulgacion/codigo6/codigo6.pde)
+
 ```
 //  importamos la librería MIDIBUS
 import themidibus.*;
