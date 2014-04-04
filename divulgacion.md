@@ -188,7 +188,7 @@ De esta manera, nos entrañamos en la función ellipse() y realizamos nuestro pr
 
 Ahora tomando este punto de partida, y añadiendo algo de “random();”, podemos decirle al programa que cree una figura dentro de un estándar que es el método de dibujar un circulo que discernimos anteriormente.
 
-![Descarga el código](codigoDivulgacion/codigo4/codigo4.pde)
+[Descarga el código](codigoDivulgacion/codigo4/codigo4.pde)
 
 ```
 float radius = 100; //  radio de nuestra forma
@@ -255,9 +255,9 @@ float customNoise(float value)
 
 Siempre que ejecutamos el código, por decirlo de alguna manera; los pétalos no nacen en el mismo lugar, siempre giran en sentido horario de las agujas del reloj, permitiendo que siempre sea diferente de la anterior.
 
-Por ultimo observaremos otro ejemplo para observar la evolución de una imagen en __Processing__, a esta imagen le añadiremos algo aprendido en ejercicios anteriores, pues la figura se generar siempre y cuando presionemos cualquier tecla de nuestra computadora, lo cual añadirá a nuestra imagen una forma de interactividad muy simple:
+Para terminar esta sección de imagenes generativas, observaremos otro ejemplo para observar la evolución de una imagen en __Processing__, a esta imagen le añadiremos algo aprendido en ejercicios anteriores, pues la figura se generar siempre y cuando presionemos cualquier tecla de nuestra computadora, lo cual añadirá a nuestra imagen una forma de interactividad muy simple:
 
-![Descarga el código](codigoDivulgacion/codigo5/codigo5.pde)
+[Descarga el código](codigoDivulgacion/codigo5/codigo5.pde)
 
 ```
 //  Johnny Sepúlveda
