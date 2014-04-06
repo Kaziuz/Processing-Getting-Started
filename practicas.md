@@ -8,7 +8,7 @@
 
 3. Hacer que un circulo siga el mouse               [solución](codigo de practicas/solucion4.pde)
 
-4. circulo siga el mouse                            [solución](codigo de practicas/solucion5.pde)
+4. Lineas con Random                                [solución](codigo de practicas/solucion5.pde)
 
 5. Usando random                                    [solución](codigo de practicas/solucion6.pde)
 
