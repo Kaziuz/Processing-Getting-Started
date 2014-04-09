@@ -57,6 +57,8 @@ Este es el punto fuerte de __Processing__, ya que al tratarse de un lenguaje de 
 
 Para empezar con __Processing__ debemos dirigirnos a su portal [web]( https://processing.org/download/), y descargarlo porque es libre como el aire; nos preguntaran si queremos hacer un tipo de donación para financiar el proyecto, luego lo instalamos en nuestra computadora y estamos listo para iniciar.
 
+O por el contrario si eres muy impaciente y quieres empezar ahora mismo, puedes entrar a este portal [web](http://js.do/blog/processing/editor/) y ejecutar los ejercicios a continuación sin tener Processing instalado en tu computadora.
+
 La interfaz de __Processing__ esta compuesta por una serie de botones en la parte superior los cuales pueden ser intuitivos, un botón de start, otro de stop y otros que explicaremos mas adelante. 
 
 ![iconos](imagenes/imagen5.png)
