@@ -187,7 +187,7 @@ Empieza visitando [Processing](http://processing.org/download) y selecciona la v
 tar xvfz processing-xxxx.tgz
 ````
 
-![Imagen](imagen1.png)
+![Imagen](imagenes/imagen1.png)
 
 El comando anterior, sirve para descomprimir el archivo que acabaste de descargar.
 Luego, para acceder a esa carpeta, escribiremos lo siguiente en la terminal:
@@ -197,7 +197,7 @@ cd processing-xxxx
 ````
 y presionamos la tecla enter.
 
-![Imagen](imagen2.png)
+![Imagen](imagenes/imagen2.png)
 
 Si quieres ver el contenido de la carpeta, escribe el comando _ls_, que significa listar todos los elementos que tenemos en la carpeta.
 Finalmente para hacer correr Processing, escribimos
@@ -206,7 +206,7 @@ Finalmente para hacer correr Processing, escribimos
 ./processing
 ```
 
-![imagen](imagen3.png)
+![imagen](imagenes/imagen3.png)
 
 con algo de suerte y un poco de paciencia, podrás ver el IDE de Processing en tu pantalla. Todos los setups son diferentes, si posees algún problema y el programa no empieza, podrás empezar de otra manera, dirigirte a los foros, donde haya podrán resolverte el problema. [foro](http://wiki.processing.org/index.php/Troubleshooting)
 
@@ -221,11 +221,11 @@ _7 Directorio:_ En la terminal, directorio suele nombrarseles a las carpetas de 
 
 __Antes de empezar:__ Todos los ejemplos de código de este tutorial, están alojados en este repositorio de git, en la carpeta llamada Getting started. 
 
-![interfaz](imagen4)
+![interfaz](imagenes/imagen4)
 
 Ahora que tenemos funcionando el entorno de desarrollo Processing. Describiremos un poco que posee, la parte blanca larga es el editor de texto y es allí donde escribiremos las líneas de código. La fila de botones en la parte superior se llama barra de herramientas y de izquierda a derecha tenemos los botones de:
 
-![barra de herramientas](imagen5.png)
+![barra de herramientas](imagenes/imagen5.png)
 
 1. __Play:__ ejecuta nuestro código.
 2. __Stop:__ para nuestro código.
@@ -244,7 +244,7 @@ En el editor, escribe lo siguiente:
 ellipse(50, 50, 80, 80);
 ```
 
-![Circulo](imagen6)
+![Circulo](imagenes/imagen6)
 
 Esta línea de código es un método para “dibujar un circulo”, felicidades, haz realizado tu primer programa en Processing ¡.
 
@@ -260,7 +260,7 @@ Después, seguiremos adelante con nuestro [8]sketch que se pondrá mas interesan
 
 Borra la línea de código anterior, y ahora prueba este código:
 
-![Circulos](imagen7.png)
+![Circulos](imagenes/imagen7.png)
 
 ```
 void setup()
