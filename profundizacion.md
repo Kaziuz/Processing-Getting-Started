@@ -319,7 +319,7 @@ __9 metodo:__  Suele llamarsele metodo a una porción de codigo que esta dentro 
 Lo primero que hay que saber, es que dibujar sobre una pantalla de computador es como trabajar en una hoja cuadriculada. Primero empezamos paso por paso, teniendo un proceso técnico cuidadoso. Empezaremos dibujando formas simples que luego se expandirán a la animación y la interacción. Pero empecemos por el principio.
 Una pantalla de computador es una red de luces con elementos llamados pixeles. Cada pixel tiene una posición en la pantalla definida por coordenadas. El eje de coordenadas x es la distancia horizontal desde el origen y el eje de coordenadas y es la distancia vertical. En Processing, el origen es la esquina superior izquierda de la ventana de representación y coordina los valores hacia abajo y hacia la derecha. La imagen de la izquierda muestra el sistema de coordenadas, y la imagen de la derecha muestra varias posiciones en la rejilla:
 
-![Plano cartesiano](imagen8.jpg)
+![Plano cartesiano](imagenes/imagen8.jpg)
 
 Como muestra el ejemplo anterior, si queremos dibujar un pixel en la pantalla; lo llevaremos a cabo de la siguiente manera: Si la pantalla es de 100 por 100 pixeles (Grafica anterior izquierda) entonces podemos decir que la coordenada superior izquierda es de (0, 0) ⇔ (x, y). El centro esta en (50, 50) ⇔(x, y). Y la izquierda de abajo es (99, 99) ⇔ (x, y). Pero esto parece algo confuso, ¿ Porque si el tamaño es de 0 a 100 vamos a recorrerlo de 0 a 99 ?, la respuesta es sencilla, en computación, el cero también es un numero, entonces; si tenemos una cantidad de 1 a 10, realmente tenemos de 0 a 9.
 
@@ -344,19 +344,19 @@ size(200, 200);
 point(100, 100);
 ```
 
-![Pixel](imagen9.png)
+![Pixel](imagenes/imagen9.png)
 
 ### Formas básicas.
 
 Processing incluye un grupo de funciones para dibujar formas básicas. Las formas simples como las líneas pueden ser combinadas para crear formas más complejas como una hoja o una cara. Para dibujar una sola línea, necesitamos cuatro parámetros: dos para fijar las coordenadas x y y iniciales y otras dos coordenadas x y Y  para las posiciones finales.
 
-![Algunas formas basicas](imagen10.jpg)
+![Algunas formas basicas](imagenes/imagen10.jpg)
 
 ### Ejemplo 2: Dibujar una línea.
 
 Para dibujar una línea entre las coordenadas (20, 50) y (420, 110), intenta:
 
-![Linea](imagen12.jpg)
+![Linea](imagenes/imagen12.jpg)
 
 ```
 size(480, 120);
@@ -367,7 +367,7 @@ line(20, 50, 420, 110);
 
 Siguiendo este patrón, un triángulo necesita seis parámetros y un cuadrilátero necesita 8 (un par por cada punto):
 
-![Formas básicas](imagen13.jpg)
+![Formas básicas](imagenes/imagen13.jpg)
 
 ```
 size(480, 120);
@@ -380,7 +380,7 @@ triangle(158,55,290,91,290,112);
 
 Los rectángulos y círculos son definidos con cuatro parámetros: el primero y el segundo son para las coordenadas X y Y del punto de anclaje, el tercero y cuarto para el ancho y alto. Para hacer un rectángulo con las coordenadas (180,60) con un ancho de 220 pixeles y un largo de 40, usa la función _rect()_ así:
 
-![Rectangulo](imagen14.jpg)
+![Rectangulo](imagenes/imagen14.jpg)
 
 ```
 size(480, 120);
@@ -391,7 +391,7 @@ rect(180, 60, 220, 40);
 
 Las coordenadas x y Y de un rectángulo son las de la esquina superior izquierda, pero en un circulo son las del centro de la forma. En este ejemplo, notamos que la coordenada Y para el primer circulo esta fuera de la ventana. Los objetos pueden ser dibujados parcialmente (o enteramente) fuera de la ventana sin ningún error.
 
-![Circulos](imagen16.jpg)
+![Circulos](imagenes/imagen16.jpg)
 
 ```
 size (480,120);
@@ -404,7 +404,7 @@ ellipse (412,60,18,18);
 
 La función arc() dibuja parte de un circulo.
 
-![arcos](imagen17.jpg)
+![arcos](imagenes/imagen17.jpg)
 
 ```
 size (480,120);
@@ -416,13 +416,13 @@ arc (390,60,80,80, QUARTER_PI, PI+QUARTER_PI);
 
 En esta función, el primer y segundo parámetro establecen la ubicación, el tercero y cuarto establecen el ancho y el largo. El quinto parámetro establece el ángulo para empezar el arco, y finalmente, el sexto fija donde para el ángulo. Los ángulos están establecidos en [10]radianes, en lugar de grados. Los radianes son ángulos de medición basados en el valor de pi (3.14159). En el siguiente grafico se muestra como ambos se relacionan. Tal como se presenta en este ejemplo, cuatro valores de radian son reemplazados por nombres especiales, para estos fue agregada una parte de Processing. Los valores PI, QUARTER_PI, HALF_PI, y TWO_PI pueden ser usados para reemplazar el valor de 180, 45, 90, 360, radianes.
 
-![radianes](imagen18.png)
+![radianes](iamegenes/imagen18.png)
 
 ### EJERCICIOS !!!
 
 Intenta escribir un programa que dibuje 4 líneas y que toque cada esquina de tu pantalla. Intenta dibujar líneas verticales, horizontales y diagonales. Mira un ejemplo aquí:
 
-![lineas](imagen11.png)
+![lineas](imagenes/imagen11.png)
 
 Solucion.
 
@@ -441,7 +441,7 @@ Cuando un programa de computadora esta corriendo, el computador empezará por la
 
 ### Ejemplo 7: Orden de los dibujos.
 
-![orden](imagen19.jpg)
+![orden](imagenes/imagen19.jpg)
 
 ```
 size (480,120);
@@ -458,7 +458,7 @@ Se puede pensar como si estuviéramos dibujando un circulo y un rectángulo. Si 
 En Processing, las formas básicas tienen una funciones que determinan de que forma ellas se trazaran el la pantalla. Veremos las mas básicas pero existen muchas otras. 
 La función _smooth()_ alisa los bordes de las líneas dibujadas en la pantalla, mezclando los bordes con el valor del pixel más cercano. Si el alisamiento ya esta fijado, por el contrario, la función _noSmooth()_ desmontara la funcionalidad de alisado. 
 
-![Alisado Vs No alisado](imagen20.jpg)
+![Alisado Vs No alisado](imagenes/imagen20.jpg)
 
 ### Ejemplo 8: _smooth()_
 
@@ -476,7 +476,7 @@ __NOTA:__ Algunas de las implementaciones de Processing (como la versión para J
 
 El grosor del los trazos, normalmente esta establecido a un solo pixel, pero esto puede ser modificado con la función _strokeweight()_. Este solo parámetro puede modificar el grosor del contorno de las formas.
 
-![strokeWeight()](imagen21.jpg)
+![strokeWeight()](imagenes/imagen21.jpg)
 
 ```
 size (480,120);
@@ -493,7 +493,7 @@ ellipse (389,60,90,90);
 
 La función _strokeJoin()_ cambia la forma en la que las líneas son unidas (como se muestra en las dos primeras formas), y la función _strokeCap()_ cambia como las líneas son dibujadas desde el principio hasta el final.
 
-![unión y terminado de las formas](imagen32.jpg)
+![unión y terminado de las formas](imagenes/imagen32.jpg)
 
 ```
 size(480,120);
@@ -515,11 +515,11 @@ __NOTA:__ La colocación de formas como _rect()_ y _ellipse()_ son controladas c
 
 Hasta ahora todas las forma se han llenado de blanco con líneas negras, y el fondo de la pantalla de dibujo ha tenido una luz gris. Para cambiarlos, usa las funciones _background()_, _fill()_ y _stroke()_. Los valores de estos parámetros están en el rango de 0 a 255, cuando 255 es blanco, 128 es gris medio, y 0 es negro. Esto se ilustra mejor en el siguiente grafico
 
-![Escala de grises](imagen23.jpg)
+![Escala de grises](imagenes/imagen23.jpg)
 
 Una muestra de diferentes valores de gris en un fondo negro. 
 
-![Circulos pintados usando la escala de grises](imagen22.jpg)
+![Circulos pintados usando la escala de grises](imagenes/imagen22.jpg)
 
 ```
 size (480, 120);
@@ -537,7 +537,7 @@ ellipse (268, 118, 200, 200);
 
 Puedes inhabilitar el trazado así que habrá trazo sin _nostroke()_ y puedes inhabilitar el relleno de una forma con _noFill()_.
 
-![Escala de grises](imagen24.jpg)
+![Escala de grises](imagenes/imagen24.jpg)
 
 ```
 size (480, 120);
@@ -556,7 +556,7 @@ Sea cuidadoso de no inhabilitar el relleno y el trazo al mismo tiempo, como lo h
 
 Para ir más allá de los valores de la escala de grises, usaremos 3 parámetros para especificar las componentes rojo, verde y azul de un color. 
 
-![RGB](imagen25.jpg)
+![RGB](imagenes/imagen25.jpg)
 
 ```
 size (480, 120);
@@ -573,13 +573,13 @@ ellipse (268, 118, 200, 200);
 
 Por defecto, podemos trabajar color en escala de grises o color RGB, el cual viene de la definición del color de las pantallas de los computadores. Los tres valores standard son rojo, verde y azul; y su rango que va desde 0 a 255. La forma en que los valores del gris lo hacen usando el color RGB no es muy intuitiva, así que para escoger los colores, usa Tools -> color selector (herramientas-> seleccionar el color), el cual te muestra una paleta de colores similar a la que se encuentra en cualquier software. Selecciona un color, y luego usa los valores R, G y B como parámetros para las funciones _background()_, _fill()_ o _stroke()_.
 
-![Paleta de color](imagen26.jpg)
+![Paleta de color](imagenes/imagen26.jpg)
 
 ### Transparencia
 
 Agregando un cuarto parámetro adicional a _fill()_ o _stroke()_, puedes controlar la transparencia. Este cuarto parámetro es conocido como el valor alpha, y también se usa dentro del rango de 0 a 255 para establecer la cantidad de transparencia. El valor 0 define el color como transparente total (no se mostrará), el valor 255 es totalmente opaco, y los valores entre estos extremos causan que los colores se mezclen en la pantalla.
 
-![Pintando con la paleta RGB y usando alpha](imagen27.jpg)
+![Pintando con la paleta RGB y usando alpha](imagenes/imagen27.jpg)
 
 ```
 size (480, 120);
@@ -602,7 +602,7 @@ No estás limitado a usar las figuras geométricas básicas, también puedes def
 
 La función _begindShape()_ señala el comienzo de una nueva forma. La función _vertex()_ es usada para definir cada par de coordenadas X y Y para la forma. Finalmente, _endShape()_ es utilizada para señalar que la forma a sido terminada.
 
-![Pintar una flecha](imagen28.jpg)
+![Pintar una flecha](imagenes/imagen28.jpg)
 
 ```
 size (480,120);
@@ -621,7 +621,7 @@ endShape();
 
 Cuando se ejecuta el código anterior, puedes ver que el primer y el último punto no están conectados. Para hacer esto, agrega la palabra CLOSE (cerrar) como un parámetro en _endShape()_ así:
 
-![Pintar una flecha](imagen29.jpg)
+![Pintar una flecha](imagenes/imagen29.jpg)
 
 ```
 size (480, 120);
@@ -672,11 +672,11 @@ Para empezar una idea visual, es ideal primero dibujar, crear un pequeño boceto
 
 Yo escogí un satélite, porque me parecen una tecnología muy interesante y visualmente atractiva.
 
-![boceto de un satélite a mano](imagen30.jpg)
+![boceto de un satélite a mano](imagenes/imagen30.jpg)
 
 Aproximadamente, la forma en Processing visualmente queda así:
 
-![boceto de un satélite en processing](proyecto1.jpg)
+![boceto de un satélite en processing](imagenes/proyecto1.jpg)
 
 ```
 //  Proyecto 1
@@ -742,7 +742,7 @@ La razón principal por la que usamos las variables es para evitar la repetició
 
 Por ejemplo, cuando haces la coordenada Y, y el diámetro para los dos círculos en este ejemplo en variables, los mismos valores son usados para cada circulo:
 
-![Intro a las variables](imagen33.jpg)
+![Intro a las variables](imagenes/imagen33.jpg)
 
 ```
 size (480, 120);
@@ -757,7 +757,7 @@ ellipse (275, y, d, d); // derecha
 
 Cambiando simplemente las variables y y d se alteran los 3 círculos:
 
-![Cambio de valores a las variables](imagen34.jpg)
+![Cambio de valores a las variables](imagenes/imagen34.jpg)
 
 ```
 size (480, 120);
@@ -801,7 +801,7 @@ Processing tiene una serie de variables especiales para almacenar información a
 
 En este ejemplo, cambiamos los parámetros en base a  _size()_, para ver como funciona:
 
-![Usando constantes width y height](imagen35.jpg)
+![Usando constantes width y height](imagenes/imagen35.jpg)
 
 ```
 size (480, 120);
@@ -819,7 +819,7 @@ La gente a menudo asume que las matemáticas y la programación son lo mismo. Au
 
 ### Ejemplo 4: Aritmética básica.
 
-![Matemática básica](imagen36.jpg)
+![Matemática básica](imagenes/imagen36.jpg)
 
 ```
 size (480, 120);
@@ -885,7 +885,7 @@ A medida que escribes más programas, notarás que los patrones se asemejan cuan
 
 Este ejemplo tiene el tipo de patrón que puede ser simplificado para _for loop_:
 
-![Repetición](imagen37.jpg)
+![Repetición](imagenes/imagen37.jpg)
 
 ```
 size (480, 120);
@@ -926,7 +926,7 @@ statements
 
 Típicamente el __init__ declara una nueva variable para usar dentro de for loop y asignar un valor. El nombre de la variable __i__ es usado frecuentemente, pero no tiene nada de especial. __El condicional__ evalúa el valor de esta variable, y __el incremento__ cambia el valor de la variable. La siguiente imagen muestra el orden en el cuál estos corren y como controlan la declaración del código dentro del bloque.
 
-![Diagrama de flujo de un foor loop](imagen38.jpg)
+![Diagrama de flujo de un foor loop](imagenes/imagen38.jpg)
 
 La declaración del __condicional__ requiere más explicación. Siempre es una __expresión relacional__ que compara dos valores con un __operador relacional__. En este ejemplo, la expresión es “i < 400” y el operador es el símbolo < (menor que). Los operadores relacionales más comunes son:
 
@@ -947,7 +947,7 @@ Para la expresión 5 < 3, preguntamos, “es cinco menor que tres?” Porque la 
 
 Trata de dibujar la siguiente figura usando un for loop.
 
-![Circulos con for loop](imagen39.jpg)
+![Circulos con for loop](imagenes/imagen39.jpg)
 
 __Solución__
 
@@ -964,7 +964,7 @@ for (int i = 25; i < width; i += 50)
 
 ### Ejemplo 7: Mas de foor loop. 
 
-![Un abanico de líneas.](imagen40.jpg)
+![Un abanico de líneas.](imagenes/imagen40.jpg)
 
 ```
 size (480, 120);
@@ -980,7 +980,7 @@ for (int i =20; i <400; i +=20)
 
 Cuando un for loop es incrustado dentro de otro, el número de repeticiones es multiplicado. Primero, miremos un corto ejemplo, y luego lo descomponemos.
 
-![For dentro de For](imagen41.jpg)
+![For dentro de For](imagenes/imagen41.jpg)
 
 ```
 size (480, 120);
@@ -1001,7 +1001,7 @@ for (int y = 0; y <= height; y += 40)
 
 En este ejemplo, el for loop es adyacente, en lugar de uno incrustado dentro de otro. El resultado muestra que un for loop está dibujando una columna de 4 círculos y el otro está dibujando una fila de 13 círculos:
 
-![Filas y columnas](imagen42.jpg)
+![Filas y columnas](imagenes/imagen42.jpg)
 
 ```
 size (480, 120);
@@ -1026,7 +1026,7 @@ Los siguientes ejemplos muestran un par de formas que pueden ser extendidas, per
 
 ### Ejemplo 10: Líneas y círculos.
 
-![Filas y columnas](imagen43.jpg)
+![Filas y columnas](imagenes/imagen43.jpg)
 
 ```
 size (480, 120);
@@ -1049,7 +1049,7 @@ for (int y = 20; y <= height-20; y += 10)
 
 ### Ejemplo 11: Círculos.
 
-![Circulos](imagen44.jpg)
+![Circulos](imagenes/imagen44.jpg)
 
 ```
 size (480, 120);
