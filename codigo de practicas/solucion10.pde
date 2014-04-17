@@ -1,6 +1,4 @@
 //  importamos la librería MIDIBUS
-
-//  se puede instalar llendo a: sketch/ import library/ Add library 
 import themidibus.*;
 
 // Instanciamos la librería, esto es necesario para poder usar la librería en nuestro codigo.
