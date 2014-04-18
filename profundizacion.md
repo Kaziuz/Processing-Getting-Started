@@ -416,7 +416,7 @@ arc (390,60,80,80, QUARTER_PI, PI+QUARTER_PI);
 
 En esta función, el primer y segundo parámetro establecen la ubicación, el tercero y cuarto establecen el ancho y el largo. El quinto parámetro establece el ángulo para empezar el arco, y finalmente, el sexto fija donde para el ángulo. Los ángulos están establecidos en [10]radianes, en lugar de grados. Los radianes son ángulos de medición basados en el valor de pi (3.14159). En el siguiente grafico se muestra como ambos se relacionan. Tal como se presenta en este ejemplo, cuatro valores de radian son reemplazados por nombres especiales, para estos fue agregada una parte de Processing. Los valores PI, QUARTER_PI, HALF_PI, y TWO_PI pueden ser usados para reemplazar el valor de 180, 45, 90, 360, radianes.
 
-![radianes](iamegenes/imagen18.png)
+![radianes](imagenes/imagen18.png)
 
 ### EJERCICIOS !!!
 
@@ -1090,7 +1090,31 @@ yo estoy dibujando
 2
 ...
 
-El código dentro de los corchetes del bloque draw() corre desde arriba hasta abajo, y se repite indefinidamente hasta que presionas stop o cierras la ventana. Cada vuelta a través de draw() es llamada por la función frameCount(). 
+El código dentro de los corchetes del bloque draw() corre desde arriba hasta abajo, y se repite indefinidamente hasta que presionas stop o cierras la ventana. Cada vuelta a través de draw() es llamada por la función frameCount(). (Por defecto la velocidad de cada frame es de 60 frames por segundo, pero esto puede ser cambiado). En el ejemplo anterior, la función println() escribe el texto "estoy dibujando" seguido de un recuento de fotogramas según su contabilidad por la variable especial framecount (recontar) ( 1, 2, 3, 4, 5...). El text aparece en la consola, en el área negra al fondo de la ventana del editor de processing.
+
+## Ejemplo 2: La función setup()
+
+Para complementar la función de loopeo de draw(). Processing tiene una función llamada setup() que corre solo una vez cuando el programa comienza:
+
+```
+void setup()
+{
+println("voy a comenzar");
+}
+
+void draw()
+{
+println("estoy coriendo")
+}
+
+
+
+
+
+
+
+
+
 
 
 
