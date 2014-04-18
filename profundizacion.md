@@ -1106,6 +1106,323 @@ void draw()
 {
 println("estoy coriendo")
 }
+```
+Cuando este código está corriendo, lo siguiente aparecerá escrito en la consola:
+
+voy a comenzar
+estoy corriendo
+estoy corriendo
+estoy corriendo
+
+El texto "estoy corriendo" continúa escribiéndose en la consla hasta que el programa sea parado.
+
+En un programa típico, el código dentro de setup() es usado para definir los valores del comienzo. La primera línea suele ser la función size(), a menudo seguido por un código para establecer los colores de relleno y el trazo del comienzo, o tal vez para cargar imágenes y fuentes. Si no se incluye la función size, processing por defecto creará una ventana de 100x100 pixeles.
+
+Ahora sabes cómo usar setup() y draw(), pero esta no es toda la historia. Hay una ubicación más para poner código. También puedes poner variables fuera de setup y de draw. Si creas una variable dentro de setup(), o puedes usarla dentro de draw(), así que necesítaras escribir esas variables en otro lugar. Algunas varibales son llamadas globales, porque pueden ser usadas en cualquier parte ("globalmente") en el programa. Esto es más claro cuando tenemos una lista de orden en la cual el código está corriendo:
+
+1. Variables creadas y declaradas fuera de setup() y de draw().
+2. El código dentro de setup() corre una vez.
+3. El código dentro de dra() corre continuamente.
+
+## Ejemplo 3: setup() y draw()
+
+En el siguiente ejemplo fijaremos los dos metodos juntos:
+
+```
+int x = 280;
+int y = -100;
+int diametro = 380;
+
+void setup()
+{
+    size(480, 120);
+    smooth();
+    fill(102);
+}
+void draw () {
+  background (204);
+  ellipse (x, y, diametro, diametro);
+}
+```
+## Seguir
+Ahora que tenemos el código corriendo continuamente, podemos rastrear la posición del mouse y usar estos números para mover elementos en la pantalla.
+
+## Ejemplo 4: Rastreando el mouse.
+
+La variable mouseX guarda la coordenada x, y la variable mouseY guarda la coordenada y:
+
+![rastreando el mouse](imagenes/rastreandoCirculo.jpg)
+
+```
+void setup()
+{
+  size(480, 120);
+  fill(0, 102);
+  smooth();
+  noStroke();
+}
+
+void draw()
+{
+  ellipse(mouseX, mouseY, 9, 9);
+}
+```
+
+En este ejemplo, cada vez que el código en el bloque draw() está corriendo, un nuevo círculo es dibujado en la ventana. Esta imagen fue hecha moviéndose el mouse alrededor de la ventana, para controlar la ubicación del círculo.Porque el relleno es establecido para ser parcialmente transparente, las áreas densas y negras muestran donde el mouse pasa más tiempo y donde se mueve más lento. Loc círculos que son espaciados aparte muestran cuando el mouse se estaba moviendo más rápido.
+
+## Ejemplo 5: Un punto que nos sigue.
+
+En este ejemplo, un nuevo círculo es dibujado en la ventana cada vez que el código dentro de draw() está corriendo. Para refrescar la pantalla y sólo mostrar el círculo más nuevo, coloca la función background() al comienzo de draw() antes de que la forma sea dibujada:
+
+![círculo siguiendonos](imagenes/actualizandoCirculo.jpg)
+
+```
+void setup()
+{
+  size(480, 120);
+  fill(0, 102);
+  smooth();
+  noStroke();
+}
+
+void draw()
+{
+  background(204);
+  ellipse(mouseX, mouseY, 9, 9);
+}
+```
+La función background() limpia toda la ventana, así que tienes que estar seguro de colocar siempre antes otras funciones dentro de draw(); de otra manera, las formas dibujadas serán borradas.
+
+## Ejemplo 6: Dibujar continuamente.
+
+las variables pmouseX y pmouseY guardan la posición del mouse en el cuadro anterior. Como mouseX y mouseY son variables especiales, son actualizadas cada vez que draw() corre. Combinadas, pueden ser usadas para dibujar líneas continuamente conectando la ubicación actual y la más reciente:
+
+![dibujando líneas](imagenes/actualizandoLinea.jpg)
+
+```
+void setup()
+{
+  size(480, 120);
+  stroke(4);
+  smooth();
+  stroke(0, 102);
+}
+
+void draw()
+{
+  line(mouseX, mouseY, pmouseX, pmouseY);
+}
+```
+## Ejemplo 7: Ajustando el grosor sobre la marcha.
+
+Las variables pmouseX y pmouseY pueden también ser usadas para calcular la velocidad del mouse. Esto es hecho midiendo la distancia entre la posición actual y la más reciente del mouse. Si el mouse se mueve lentamente, la distancia es pequeña, pero si el mouse empieza a moverse ráìdamente, la distancia crece. una función llamada dist() simplifica este cálculo, como se muestra en el siguiente ejemplo. Aquí, la velocidad del mouse es usada para establecer el grosor de la línea dibujada:
+
+![modificando el grosor con distancia](imagenes/actualizandoAncho.jpg)
+
+```
+void setup()
+{
+  size(480, 120);
+  smooth();
+  stroke(0, 102);
+}
+
+void draw()
+{
+  float ancho = dist(mouseX, mouseY, pmouseX, pmouseY);
+  strokeWeight(ancho);
+  line(mouseX, mouseY, pmouseX, pmouseY);
+}
+```
+## Ejemplo 8: facilitando las cosas.
+
+En ele ejemplo anterior, los valores del mouse son convertidos directamente en posiciones en la pantalla. Pero a veces quieres que esos valores sigan al mouse libremente, con la finalidad de crear movimientos mas fluidos. Esta técnica es llamda facilitadora (Easing). Para usar esta técnica se tiene en cuenta dos valores: el valor actual y el valor a avanzar. En cada paso del programa, el valor actual se mueve un poco más cerca al valor objetivo:
+
+![Easing](imagenes/actualizandoEasing.jpg)
+
+```
+float x;
+float easing = 0.01;
+float diametro = 12;
+
+void setup() 
+{
+  size(220, 120);
+  smooth();
+}
+void draw() 
+{
+  float targetX = mouseX;
+  x = x + (targetX - x) * easing;
+  ellipse(x, 40, diametro, diametro);
+  println(targetX + " : " + x);
+}
+```
+El valor de la variable x siempre se acerca al de targetX. La velocidad con la cual se acerca a targetX es establecida con la variable easing, un número entre 0 y 1. Un valor pequeño para facilitar la causa de más de un retardo de un valor mayor. Con un valor facilitador de 1, no hay retardo. Cuando se corre este ejemplo (no olvides descargarlos en este repositorio) los valores actuales son mostrados en la consola a través de la función println(). Cuando se mueve el mouse, notarás como los números están aparte, pero cuando el mouse para de moverse, el valor x se acerca a targetX.
+
+![Easing](imagenes/EasingFuncionando.jpg)
+
+Todo el trabajo en este ejemplo pasa en la línea que comienza en x = x +. Ahí, la diferencia entre el objetivo y el valor actual es calculado, luego es multiplicado por la variable facilitadora y agregada a x para traerlo cerca al objetivo.
+
+## Ejemplo 9: líneas suaves facilitadoras.
+
+En este ejemplo, la técnica facilitadora es aplicada al ejemplo 7, en comparación, las líneas son mas suaves:
+
+![EasingLineas](imagenes/lineasEasing.jpg)
+
+```
+float x;
+float y;
+float posx;
+float posy;
+float easing = 0.05;
+
+void setup() 
+{
+  size(480, 120);
+  smooth();
+  stroke(0, 102);
+}
+
+void draw() 
+{
+  float targetX = mouseX;
+  x = x + (targetX - x) * easing;
+  
+  float targetY = mouseY;
+  y = y + (targetY - y) * easing;
+  
+  float ancho = dist(x, y, posx, posy);
+  
+  strokeWeight(ancho);
+  line(x, y, posx, posy);
+  
+  posx = x;
+  posy = y;
+}
+```
+## La función map()
+
+Cuando los números son usados para dibujar en la pantalla,  es útil convertir los valores de una serie de números a otra.
+
+## Ejemplo 10: Asignando valores a una serie.
+
+la variable mouseX usualmente está entre 0 y el ancho de la ventana, pero tal vez quieras volver a asignar estos valores a una serie diferente de coordenadas. puedes hacer esto haciendo cálculos como dividir mouseX por un número para reducir el ranfo y luego agragar o sustraer un número para desplazarlo a la derecha o a la izquierda:
+
+![Lineas](imagenes/lineasMap.jpg)
+
+```
+void setup() 
+{
+  size(240, 120);
+  strokeWeight(12);
+  smooth();
+}
+
+void draw() 
+{
+  background(204);
+  stroke(255);
+  line(120, 60, mouseX, mouseY); // linea blanca
+  stroke(0);
+  float mx = mouseX/2 + 60;
+  line(120, 60, mx, mouseY);//  linea negra
+}
+```
+La función map() es una forma mas general de hacer este tipo de cambios. Convierte una variable de una serie de números a otra. El primer parámetro es la variable para ser convertida, el segundo y el tercer parametro son los valores altos y bajos de esa variable, y el cuarto y quinto parametro son los valores altos y bajos deseados. la función map() esconde la matemática detras de la conversión.
+
+## Ejemplo 11: Mapeando con la función map()
+
+Este ejemplo reescribe el ejemplo anterior usando map():
+
+```
+void setup() 
+{
+  size(240, 120);
+  strokeWeight(12);
+  smooth();
+}
+
+void draw() 
+{
+  background(204);
+  stroke(255);
+  line(120, 60, mouseX, mouseY); // linea blanca
+  stroke(0);
+  float mx = map(mouseX, 0, width, 60, 180);
+  line(120, 60, mx, mouseY);//  linea negra
+}
+```
+La función map() hace que el código sea fácil de leer, porque los valores máximos y mínimos son escritos calaramente como parámetros. En este ejemplo, los valores de mouseX que están entre 0 y el ancho son convertidos a un numero desde 60 (cuando mouseX es 0) hasta 180 (cuando mouseX es width). Encontrarás útil la función map() en varios ejemplos a través de este tutorial.
+
+## click
+
+Además de la ubicación del mouse, Processing también comprueba si el botón del mouse está presionado. la variable mousePressed tiene un valor diferente cuando el botón del mouse es presionado y cuando no. La variable mousePressed es de tipo de datos llamado boolean, lo cual significa que tene sólo dos posibles valores: verdadero o falso. El valor de mousePressed es verdadero cuando el botón es presionado.
+
+## Ejemplo 12: Hacer click con el mouse.
+
+La variable mousePressed es usada junto con la declaración if para deerminar cuándo una línea de código correrá y cuando no. intenta con este ejemplo antes de explicar con más detalle:
+
+![mousePressed](imagenes/mousePressed.jpg)
+
+```
+void setup() 
+{
+  size(240, 120);
+  smooth();
+  strokeWeight(30);
+}
+
+void draw() 
+{
+  background(204);
+  stroke(102);
+  line(40, 0, 70, height);
+
+  if (mousePressed == true)
+  {
+    stroke(0);
+  }
+
+  line(0, 70, width, 50);
+}
+```
+
+En este programa, el código dentro del bloque if corre solamente cuando el botón del mouse es presionado. Cuando un botón no es presionado, este código es ignorado. Como se discutio con la "repeticón" del for loop en el capítulo 4, if también tiene un test que es evaluado con verdadero o falso:
+
+```
+if (test)
+{
+statement
+}
+```
+Cuando el test es verdadero, el código dentro del bloque correrá; cuando test es falso, el código dentro del bloque no está corriendo. El computador determinda si el test es verdadero o falso evaluando la expresión dentro del paréntesis.
+
+El símbolo == compara los valores en la izquierda y la derecha del examen si son equivalentes. Este símbolo == es diferente el operador de asignación, el símbolo = sólo. El símbolo == pregunta "son estas dos cosas iguales" y el símbolo = establece el valor de una variable.
+
+--------------------------------
+_NOTA:_ Es un error común, incluso para programadores con experiencia, escribir = en el código cuando se quiere escribir ==. El software Processing no siempre te advertirá cuando hagas eso, así que ten cuidado.
+--------------------------------
+```
+if (mousePressed) {}
+```
+las variables boolean, incluyendo mousePressed, no necesitan la compración explícita con el operador ==, porque sólo pueden ser verdaderas o falsas.
+
+## Ejemplo 13: Detecta cuando no se haga click.
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
 
 
 
