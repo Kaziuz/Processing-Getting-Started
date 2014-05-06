@@ -1,0 +1,8 @@
+Hola.
+
+Este código se esta construyendo para realizar las visuales de lanzamiento de las casas de la música. Algunas partes de este programa, usan partes de otros sketches bajados de http://www.openprocessing.org/.
+
+Gracias a la comunidad de usuarios de Processing por compartir.
+Así mismo, siéntase libre de usar.
+
+Kaziuz  << Escuelas de Música de Medellín >> 2014 
