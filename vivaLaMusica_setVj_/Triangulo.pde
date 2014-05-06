@@ -1,25 +1,25 @@
 
-
-class Cubo
+class Circulo
 {
   float tam = 0.0;
   boolean run, pressed;
+  PImage img;
 
-  Cubo()
+  Circulo()
   {
     run = true;
+    img = loadImage("triangulo.png");
   }
 
-  void dibujarCubo()
+  void dibujarCirculo()
   {
+
+    ellipseMode(CENTER);
     noStroke();
-    rect(0, 0, width, height);
-    rectMode(CENTER);
-    noFill();
-    stroke(#ED6B9F);
-    rect(width/2, height/2, tam, tam);
-    
-    //  Muchas gracias fabio 
+    imageMode(CENTER);
+    tint(#A4295B); 
+    image(img, width/2, height/2, tam-10, tam-10);
+
     if (pressed == true)
     {
       tam = 0;
@@ -37,7 +37,7 @@ class Cubo
     }
   }
 
-  void redibujarCubo()
+  void redibujarCirculo()
   {
     pressed = false;
     tam = 0;

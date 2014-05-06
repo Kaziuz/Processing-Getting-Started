@@ -1,13 +1,10 @@
-
+//  Codigo tomado de Openprocessing !!!
 class Fractal
 {
   float nBranches = 10;
   float startingLength = random(90);
   float phasor = 0.0;
   float rate = random(0.0005, 0.0001);
-
-  float red = random(255);
-  float green = random(255);
 
   PVector getVCoordinates(PVector v, float d, float a)
   {
@@ -21,6 +18,7 @@ class Fractal
   void dibujarFractal()
   {
     noStroke();
+    rectMode(CORNERS);
     rect(0, 0, width, height);
 
     float sine = sin(phasor * TWO_PI);
@@ -36,7 +34,7 @@ class Fractal
 
       while (L > 2) 
       {
-        stroke(red, green, 0, 62);
+        stroke(#73AD2C);
         L *= 0.95;
 
         line(v1.x, v1.y, v2.x, v2.y);
@@ -59,12 +57,9 @@ class Fractal
   void redibujarFractal()
   {
     background(0);
-    nBranches = 10;
     startingLength = random(90);
     phasor = 0.0;
     rate = random(0.0005, 0.0009);
-    red = random(255);
-    green = random(255);
   }
 }
 
