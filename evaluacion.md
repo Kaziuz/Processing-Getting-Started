@@ -115,6 +115,10 @@ Fue bien para una charla introductoria.
 
 -> Muy bien lo de los ejemplos con música para explicar los géneros, además me pareció excelente el loop de la canción de james Brown si no estoy mal, para explicar la repercusión de un genero como el drum and bass.
 
+-> Me parece excelente que use experiencias personales para contestar preguntas muy técnicas, eso, es un plus extra que se le da a este tipo de charlas.Por ejemplo lo del side chain a la frecuencia, respuesta que uso para contestar una pregunta, además que fue algo que uso para su banda artefacto.
+
+-> En general la charla estuvo muy bien, amena y entretenida. Nos reímos, aprendimos y además el titulo era muy prometedor, tanto, que una charla de dos horas fue sostenida con un track realizado en 20 minutos. El reason me pareció sencillo y yo quede con sensación de "queremos más"
+
 ## Conclusiones sobre la charla de Fede: Introducción a chuck.
 
 -> El lenguaje de programación chuck siempre me a pareció algo complejo, pues funciona distinto en cuanto a la sintaxis de otros lenguajes; un ejemplo de ello es que las variables son declaradas a la derecha, caso contrario a los demás lenguajes donde las variables son declaradas a la izqueirda.
