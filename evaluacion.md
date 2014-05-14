@@ -107,13 +107,19 @@ Fue bien para una charla introductoria.
 
 ##  Conclusiones sobre las dos charlas de Pipe Carmona: secuenciadores y los sonidos del futuro.
 
--> Pipe carmona es un gran conocedor de esta temática, en algunas ocaciones los "chistes" ya eran demasiados, creo que moderadamente suelen ser muy positivos, muchos distraen. Palabras como "chuflin" deben omitidas y reemplazadas por otras que representen la finalidad de usar la palabra.
+-> Pipe carmona es un gran conocedor de esta temática, en algunas ocasiones los "chistes" ya eran demasiados, creo que moderadamente suelen ser muy positivos, muchos distraen. Palabras como "chuflin" deben omitidas y reemplazadas por otras que representen la finalidad de usar la palabra.
 
--> No estoy seguro si Kevin Sauderson, Derrick May y Juan Atkins, la santa trinidad del techno como son  llamados por ser precursores de este genero, estuvieran drogados o alcoholizados para haber creado este genero.
+-> No estoy seguro si Kevin Sauderson, Derrick May y Juan Atkins, la santa trinidad del techno como son llamados por ser precursores de este genero, estuvieran drogados o alcoholizados para haber creado este genero. Además, a mi parecer, "cybotron" que fue la banda que hicieron ellos tres muy influenciada por los alemanes kraftwerk, no creo que haya salido de sentarse con un porro y ya. 
 
--> Creo que se debe omitir en las charlas el tema de alucinógenos y estas cosas, porque al menos no sabemos a ciencia cierta que papel juegan las drogas en actividades creativas y culturales. 
+-> Creo que se debe omitir en las charlas el tema de alucinógenos y estas cosas, porque al menos no sabemos a ciencia cierta que papel juegan las drogas en actividades creativas y culturales, estamos seguros que se consumen, pero no creemos con certeza si son un factor decisivo a la hora de crear un track musical o innovar en dichos géneros.
 
--> Por lo general muy bien, la charla estuvo muy amena y entretenida, el reason me pareció fácil de manejar; pensé que era mas complejo. Pipe respondía muy acertivo frente a las preguntas que le hacen sus asistentes y excelente la parte de las anécdotas propias para responder algunas de ellas.
+-> Muy bien lo de los ejemplos con música para explicar los géneros, además me pareció excelente el loop de la canción de james Brown si no estoy mal, para explicar la repercusión de un genero como el drum and bass.
+
+## Conclusiones sobre la charla de Fede: Introducción a chuck.
+
+-> El lenguaje de programación chuck siempre me a pareció algo complejo, pues funciona distinto en cuanto a la sintaxis de otros lenguajes; un ejemplo de ello es que las variables son declaradas a la derecha, caso contrario a los demás lenguajes donde las variables son declaradas a la izqueirda.
+
+
 
 
 
