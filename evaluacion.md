@@ -12,8 +12,11 @@ Planetario de Medellín.
 
 * Conceptos/enfoques posibles:
 - Beneficio: *¿Cuál es la promesa del evento?*
+Usar el código para dibujar, conocer el lenguaje, ver demos.
 - Ocasión: *¿Qué hace que el evento se dé?*
+El lanzamiento de Medellin vive la música
 - Público: *¿Cuales tribus urbanas asisten?*
+Estudiantes de música, almunos y exalumos del ITM, ingenieros de sonido, programadores.
 
 ## Título:
 
@@ -32,20 +35,20 @@ __Processing__ es un programa que permite hacer imágenes interactivas, visualiz
 * Tiempo: *Contemporáneo, Retro, Futurista?*    -> contemporáneo, 
 * Espacio: *Cerrado?abierto?deportivo?natural?* -> Espacio cerrado.
 * Tecnología: *Media?avanzada?*					-> Media: proyector, controlador midi, computador.
-* Autenticidad: *Original?versión?copia local?* -> nose. 
+* Autenticidad: *Original?versión?copia local?* ->  versión  local 
 * Sofisticación: * ¿Qué tan compleja, acabada, complicada, 
-perfeccionada está la temática?*				-> nose.
-* Escala :*intima?privada?publica?masiva?*		-> nose.
+perfeccionada está la temática?*				-> Rustica
+* Escala :*intima?privada?publica?masiva?*		-> íntima
 
 ## Espacio
 #### Diferenciadores
 *¿Qué elementos del lugar son exclusivos de la experiencia?*
--> las temáticas, ya que normalmente se suele hablar de música en un contexto de instrumentistas y tecnología de producción y grabación. La temática es diferenciadora porque se trata de producción de música e imágenes a partir de algoritmos.
+-> controlador MIDI, videoBeam de lado.
 
 #### Señalizadores
 
 *¿Que elementos (exteriores/interiores) indican, señalan, anuncian o acentúan la experiencia?*
--> ninguno.
+-> entrega de plegables  de Medellín vive la música en la entrada, presencia de personal de logística con camisetas, chaleco de fede.
 
 #### Eliminar
 
@@ -94,7 +97,8 @@ perfeccionada está la temática?*				-> nose.
 
 #### Escapismo:
 *¿en qué momentos lograron los asistentes alterar el curso de la experiencia o el resultado final?*
--> Fúe poco, estaban mas inquietos por saber que mas posibilidades tenia el software.  
+-> Fúe poco, estaban mas inquietos por saber que mas posibilidades tenia el software.
+-> En el ejercicio de dividir un cuadro los errores y aciertos de la audiencia en las cifras relajaron el ambiente, y le dieron el mando a la audiencia por un momento.
 
 ## Línea de tiempo
 
@@ -105,23 +109,14 @@ Fue bien para una charla introductoria.
 -> A mi parecer creo que manejo un lenguaje técnico, lo cual trataré de manejar y cambiar, porque un publico 
    amateur no posee tal lenguaje. La inseguridad y el tartamudeo se deben mejorar.
 
-##  Conclusiones sobre las dos charlas de Pipe Carmona: secuenciadores y los sonidos del futuro.
+__Fede__
+-> Johnny logro hacer ver fácil el uso de processing y su integración con MIDI
+-> la charla se veía bien estructurada y los ejemplos funcionaban, la escritura de código en vivo funcionó y demostró el dominio del lenguaje por el presentador.
+-> Muy acertada la manera como mostró un código complejo (las raices) y si profundizar en detalles encontró variables del código que se podían alterar y mostraban resultados inmediatos y fascinantes.
+-> Pienso que no es necesario en esta charla explicar como se instala Processing, ni explicar la interfaz gráfica.
+-> me gustaría ver más ejemplos complejos con pequeñas alteraciones en vivo.
+-> me pareció brutal el video de los bichos .. pero innecesario presentarlo completo, con presentar los mejores 30 segundos sería suficiente.
 
--> Pipe carmona es un gran conocedor de esta temática, en algunas ocasiones los "chistes" ya eran demasiados, creo que moderadamente suelen ser muy positivos, muchos distraen. Palabras como "chuflin" deben omitidas y reemplazadas por otras que representen la finalidad de usar la palabra.
-
--> No estoy seguro si Kevin Sauderson, Derrick May y Juan Atkins, la santa trinidad del techno como son llamados por ser precursores de este genero, estuvieran drogados o alcoholizados para haber creado este genero. Además, a mi parecer, "cybotron" que fue la banda que hicieron ellos tres muy influenciada por los alemanes kraftwerk, no creo que haya salido de sentarse con un porro y ya. 
-
--> Creo que se debe omitir en las charlas el tema de alucinógenos y estas cosas, porque al menos no sabemos a ciencia cierta que papel juegan las drogas en actividades creativas y culturales, estamos seguros que se consumen, pero no creemos con certeza si son un factor decisivo a la hora de crear un track musical o innovar en dichos géneros.
-
--> Muy bien lo de los ejemplos con música para explicar los géneros, además me pareció excelente el loop de la canción de james Brown si no estoy mal, para explicar la repercusión de un genero como el drum and bass.
-
--> Me parece excelente que use experiencias personales para contestar preguntas muy técnicas, eso, es un plus extra que se le da a este tipo de charlas.Por ejemplo lo del side chain a la frecuencia, respuesta que uso para contestar una pregunta, además que fue algo que uso para su banda artefacto.
-
--> En general la charla estuvo muy bien, amena y entretenida. Nos reímos, aprendimos y además el titulo era muy prometedor, tanto, que una charla de dos horas fue sostenida con un track realizado en 20 minutos. El reason me pareció sencillo y yo quede con sensación de "queremos más"
-
-## Conclusiones sobre la charla de Fede: Introducción a chuck.
-
--> El lenguaje de programación chuck siempre me a pareció algo complejo, pues funciona distinto en cuanto a la sintaxis de otros lenguajes; un ejemplo de ello es que las variables son declaradas a la derecha, caso contrario a los demás lenguajes donde las variables son declaradas a la izqueirda.
 
 
 
