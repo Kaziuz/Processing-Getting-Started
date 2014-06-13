@@ -1,24 +1,15 @@
-## Diseño de juegos para conceptualizar la programacion.
+## Diseño de juegos para aprender conceptos de programación.
 
-## laboratorio-0
+## Laboratorio-0
 
-## nombre del proyecto
+## Nombre del proyecto: LINEAS Y PUNTOS.
 
--> _Descripción del juego:_ 
+__Gracias a Daniel Luna por la ayuda en la construcción de este juego__
 
--> practicando unos simples juegos. Realizamos un dinamica muy simple donde le explique a ella que desplazara el brazo horizontalmente, y que dependiendo de la posicion de su brazo extendido, mi mano de abriria o cerraria.
-A partir de esta simple practica, pude notar que con los ni;os se pueden dise;ar juegos simples en pareja, donde __ lo que haga un niño, el otro responda de forma interactiva__, serian juegos con el cuerpo interactivos.
+-> LP es un juego que usa un espacio, como una sala o salón amplio.La idea es que en ese espacio, varias personas podrán ver su posición, por unas marcas que hay en el suelo, indicando el eje X y el eje Y; ademas del ancho y el alto de ese cuarto. Ellas,  podrán dibujar con ayuda de una bola de Lycra, otras personas y un software; diferentes figuras, caminando por el suelo.
 
-__ Dinamica para aplicar juegos individuales y desarrollar la interactividad__
-* Los videoJuegos pueden ser una excelente herramienta para que el ser individual desarrolle capacidades de reaccion, ademas de que pueda entender como funcionan las computadoras a niveles de ejecucion.
+El programa para explicar este concepto sera __Scratch__, gracias a su componente formativo.
 
-__ Dinamica para desarrollar juegos grupales y desarrollar la interactividad__
-
-* No hay nada mas interactivo que una conversacion entre dos personas. Se pueden desarrollar juegos partiendo de preguntas como:
--> Como se comunica un ni;o con su entorno ?
--> Como reaaciona un ni;o a su entorno o a determinada circustancia.
-
-
-
+__Paso 1:__ Elaboración del programa en Scratch. 
 
 
