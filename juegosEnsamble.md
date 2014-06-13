@@ -1,6 +1,10 @@
 ## Diseño de juegos para conceptualizar la programacion.
 
-## Juegos para aprender las destrezas interactivas.
+## laboratorio-0
+
+## nombre del proyecto
+
+-> _Descripción del juego:_ 
 
 -> practicando unos simples juegos. Realizamos un dinamica muy simple donde le explique a ella que desplazara el brazo horizontalmente, y que dependiendo de la posicion de su brazo extendido, mi mano de abriria o cerraria.
 A partir de esta simple practica, pude notar que con los ni;os se pueden dise;ar juegos simples en pareja, donde __ lo que haga un niño, el otro responda de forma interactiva__, serian juegos con el cuerpo interactivos.
