@@ -4,7 +4,10 @@ Se trata de la elaboración de un instrumento para que jóvenes de temprana edad
 
 ## Atary punk
 
-Componentes.
+__Componentes__
+-> En el siguiente link de instructables esta el paso a paso para realizar el sintetizador, ademas de los componentes necesarios para realizarlo.
+
+
 
 
  
